@@ -1,0 +1,326 @@
+Script started on Monday 03 February 2020 01:42:48 PM IST
+]0;s4c2@CC2-26: ~/ceccs18c61/cs232/0302[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c61/cs232/0302[00m$ mkdi[K[K[K[K[K]0;s4c2@CC2-26: ~/ceccs18c61/cs232/0302[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c61/cs232/0302[00m$ inf[K[Kfconfig
+enp2s0    Link encap:Ethernet  HWaddr 38:d5:47:b8:d1:a8  
+          inet addr:192.168.0.77  Bcast:192.168.1.255  Mask:255.255.254.0
+          inet6 addr: fe80::9140:9808:8424:8b5/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:12619 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:2964 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:7248062 (7.2 MB)  TX bytes:262287 (262.2 KB)
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:528 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:528 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:37624 (37.6 KB)  TX bytes:37624 (37.6 KB)
+
+]0;s4c2@CC2-26: ~/ceccs18c61/cs232/0302[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c61/cs232/0302[00m$ route -n
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+169.254.0.0     0.0.0.0         255.255.0.0     U     1000   0        0 enp2s0
+192.168.0.0     0.0.0.0         255.255.254.0   U     100    0        0 enp2s0
+]0;s4c2@CC2-26: ~/ceccs18c61/cs232/0302[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c61/cs232/0302[00m$ route add
+Usage: inet_route [-vF] del {-host|-net} Target[/prefix] [gw Gw] [metric M] [[dev] If]
+       inet_route [-vF] add {-host|-net} Target[/prefix] [gw Gw] [metric M]
+                              [netmask N] [mss Mss] [window W] [irtt I]
+                              [mod] [dyn] [reinstate] [[dev] If]
+       inet_route [-vF] add {-host|-net} Target[/prefix] [metric M] reject
+       inet_route [-FC] flush      NOT supported
+]0;s4c2@CC2-26: ~/ceccs18c61/cs232/0302[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c61/cs232/0302[00m$ route add defaulk[Kt gw 192.168.0.30
+SIOCADDRT: Operation not permitted
+]0;s4c2@CC2-26: ~/ceccs18c61/cs232/0302[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c61/cs232/0302[00m$ pia[K[King 92[K[K192.168.0.30
+PING 192.168.0.30 (192.168.0.30) 56(84) bytes of data.
+64 bytes from 192.168.0.30: icmp_seq=1 ttl=64 time=4.52 ms
+64 bytes from 192.168.0.30: icmp_seq=2 ttl=64 time=0.596 ms
+^C
+--- 192.168.0.30 ping statistics ---
+5 packets transmitted, 2 received, 60% packet loss, time 4078ms
+rtt min/avg/max/mdev = 0.596/2.561/4.526/1.965 ms
+]0;s4c2@CC2-26: ~/ceccs18c61/cs232/0302[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c61/cs232/0302[00m$ ping www.google.con[Km
+ping: unknown host www.google.com
+]0;s4c2@CC2-26: ~/ceccs18c61/cs232/0302[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c61/cs232/0302[00m$ cat/etc/resolve.conh[Kf
+bash: cat/etc/resolve.conf: No such file or directory
+]0;s4c2@CC2-26: ~/ceccs18c61/cs232/0302[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c61/cs232/0302[00m$ /etc/resolve.conf
+bash: /etc/resolve.conf: No such file or directory
+]0;s4c2@CC2-26: ~/ceccs18c61/cs232/0302[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c61/cs232/0302[00m$ [K]0;s4c2@CC2-26: ~/ceccs18c61/cs232/0302[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c61/cs232/0302[00m$ pi[K[Kifup
+ifup: no interface(s) specified
+ifup: Use --help for help
+]0;s4c2@CC2-26: ~/ceccs18c61/cs232/0302[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c61/cs232/0302[00m$ ifup --help
+Usage: ifup <options> <ifaces...>
+
+Options:
+	-h, --help             this help
+	-V, --version          copyright and version information
+	-a, --all              process all interfaces marked "auto"
+	--allow CLASS          ignore non-"allow-CLASS" interfaces
+	-i, --interfaces FILE  use FILE for interface definitions
+	-X, --exclude PATTERN  exclude interfaces from the list of
+	                       interfaces to operate on by a PATTERN
+	-n, --no-act           print out what would happen, but don't do it
+	                       (note that this option doesn't disable mappings)
+	-v, --verbose          print out what would happen before doing it
+	-o OPTION=VALUE        set OPTION to VALUE as though it were in
+	                       /etc/network/interfaces
+	--no-mappings          don't run any mappings
+	--no-scripts           don't run any hook scripts
+	--no-loopback          don't act specially on the loopback device
+	--force                force de/configuration
+	--ignore-errors        ignore errors
+]0;s4c2@CC2-26: ~/ceccs18c61/cs232/0302[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c61/cs232/0302[00m$ ifup -a
+ifup: failed to open lockfile /run/network/ifstate.lo: Permission denied
+]0;s4c2@CC2-26: ~/ceccs18c61/cs232/0302[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c61/cs232/0302[00m$ ifup -a[Kv
+ifup: no interface(s) specified
+ifup: Use --help for help
+]0;s4c2@CC2-26: ~/ceccs18c61/cs232/0302[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c61/cs232/0302[00m$ ifup -v --help
+Usage: ifup <options> <ifaces...>
+
+Options:
+	-h, --help             this help
+	-V, --version          copyright and version information
+	-a, --all              process all interfaces marked "auto"
+	--allow CLASS          ignore non-"allow-CLASS" interfaces
+	-i, --interfaces FILE  use FILE for interface definitions
+	-X, --exclude PATTERN  exclude interfaces from the list of
+	                       interfaces to operate on by a PATTERN
+	-n, --no-act           print out what would happen, but don't do it
+	                       (note that this option doesn't disable mappings)
+	-v, --verbose          print out what would happen before doing it
+	-o OPTION=VALUE        set OPTION to VALUE as though it were in
+	                       /etc/network/interfaces
+	--no-mappings          don't run any mappings
+	--no-scripts           don't run any hook scripts
+	--no-loopback          don't act specially on the loopback device
+	--force                force de/configuration
+	--ignore-errors        ignore errors
+]0;s4c2@CC2-26: ~/ceccs18c61/cs232/0302[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c61/cs232/0302[00m$ ifup -v --help[K[Kn
+ifup: no interface(s) specified
+ifup: Use --help for help
+]0;s4c2@CC2-26: ~/ceccs18c61/cs232/0302[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c61/cs232/0302[00m$ cat network tasks
+cat: network: No such file or directory
+cat: tasks: No such file or directory
+]0;s4c2@CC2-26: ~/ceccs18c61/cs232/0302[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c61/cs232/0302[00m$ cat network tasks[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kifup -nv --helpn[K[Kifup -nv --helpn[K[Kcat network.txt
+]0;s4c2@CC2-26: ~/ceccs18c61/cs232/0302[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c61/cs232/0302[00m$ cat network.txt. network.txt[1P network.txt> network.txt[1@ [C[C[C[C[C[C[C[C[C[C[C[C[C
+hbjdskfb jfbksjdbfkjdfb
+jgskjgbndsk
+jbdskjbkjhlshjfgn jfhsouifhsdnfdnv
+nvkjdsnvnvshvg
+ndskjnvhlknvlnj
+^Z
+[1]+  Stopped                 cat > network.txt
+]0;s4c2@CC2-26: ~/ceccs18c61/cs232/0302[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c61/cs232/0302[00m$ cat > network.txt[2Pnetwork.txt[Kifup -nv --help[Ka-help[K/etc/resolve.confcat/etc/resolve.conf[1Pping www.google.comcat/etc/resolve.conf /etc/resolve.conf[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+cat: /etc/resolve.conf: No such file or directory
+]0;s4c2@CC2-26: ~/ceccs18c61/cs232/0302[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c61/cs232/0302[00m$ cat /etc/resolve.conf[1P.conf[C[C[C[C[C
+# Dynamic resolv.conf(5) file for glibc resolver(3) generated by resolvconf(8)
+#     DO NOT EDIT THIS FILE BY HAND -- YOUR CHANGES WILL BE OVERWRITTEN
+nameserver 127.0.1.1
+search example.org
+]0;s4c2@CC2-26: ~/ceccs18c61/cs232/0302[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c61/cs232/0302[00m$ cat /etc/resolv.confe.conf[4P> network.txt[2Pnetwork.txt[Kifup -n network.txt
+Unknown interface network.txt
+]0;s4c2@CC2-26: ~/ceccs18c61/cs232/0302[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c61/cs232/0302[00m$ ifup -n network.txt[1P network.txtv network.txt[C[C[C[C[C[C[C[C[C[C[C[C
+Unknown interface network.txt
+]0;s4c2@CC2-26: ~/ceccs18c61/cs232/0302[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c61/cs232/0302[00m$ ssh s1
+ssh: Could not resolve hostname s1: Temporary failure in name resolution
+]0;s4c2@CC2-26: ~/ceccs18c61/cs232/0302[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c61/cs232/0302[00m$ ssh s1[K[K14.139.184.215
+ssh: connect to host 14.139.184.215 port 22: Network is unreachable
+]0;s4c2@CC2-26: ~/ceccs18c61/cs232/0302[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c61/cs232/0302[00m$ ssh 14.139.184.215[1P[1P 14.139.184.215c 14.139.184.215p 14.139.184.215n 14.139.184.215s 14.139.184.215w 14.139.184.215[1P 14.139.184.215[1P 14.139.184.215[1P 14.139.184.215[C 14.139.184.215n 14.139.184.215e 14.139.184.215t 14.139.184.215w 14.139.184.215o 14.139.184.215r 14.139.184.215k 14.139.184.215. 14.139.184.215t 14.139.184.215x 14.139.184.215t 14.139.184.215[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+]0;s4c2@CC2-26: ~/ceccs18c61/cs232/0302[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c61/cs232/0302[00m$ scp network.txt 14.139.184.215a14.139.184.215s14.139.184.215k14.139.184.215@14.139.184.215[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+]0;s4c2@CC2-26: ~/ceccs18c61/cs232/0302[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c61/cs232/0302[00m$ scp network.txt ask@14.139.184.215[4P14.139.184.215:/home/ceccs18 c61/cs232/0302/metwork.txt
+ssh: connect to host 14.139.184.215 port 22: Network is unreachable
+lost connection
+]0;s4c2@CC2-26: ~/ceccs18c61/cs232/0302[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c61/cs232/0302[00m$ scp network.txt 14.139.184.215:/home/ceccs18cc61/cs232/0302/metwork.txt[A]0;s4c2@CC2-26: ~/ceccs18c61/cs232/0302[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c61/cs232/0302[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[10Pask@14.139.184.215
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[4P14.139.184.215[12Psh[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+ssh: connect to host 14.139.184.215 port 22: Network is unreachable
+]0;s4c2@CC2-26: ~/ceccs18c61/cs232/0302[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c61/cs232/0302[00m$ ssh 14.139.184.215cp network.txt 14.139.184.215:/home/ceccs18cc61/cs232/0302/metwork.txt[A]0;s4c2@CC2-26: ~/ceccs18c61/cs232/0302[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c61/cs232/0302[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[10Pask@14.139.184.215
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C14.139.184.215:/home/ceccs18cc61/cs232/0302/metwork.txt[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ca14.139.184.215:/home/ceccs18c61/cs232/0302/metwork.txt[A]0;s4c2@CC2-26: ~/ceccs18c61/cs232/0302[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c61/cs232/0302[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cs14.139.184.215:/home/ceccs18c61/cs232/0302/metwork.txt[A]0;s4c2@CC2-26: ~/ceccs18c61/cs232/0302[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c61/cs232/0302[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ck14.139.184.215:/home/ceccs18c61/cs232/0302/metwork.txt[A]0;s4c2@CC2-26: ~/ceccs18c61/cs232/0302[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c61/cs232/0302[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C@14.139.184.215:/home/ceccs18c61/cs232/0302/metwork.txt[A]0;s4c2@CC2-26: ~/ceccs18c61/cs232/0302[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c61/cs232/0302[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+ssh: connect to host 14.139.184.215 port 22: Network is unreachable
+lost connection
+]0;s4c2@CC2-26: ~/ceccs18c61/cs232/0302[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c61/cs232/0302[00m$ scp network.txt ask@14.139.184.215:/home/cecccs18c61/cs232/0302/metwork.txt[A]0;s4c2@CC2-26: ~/ceccs18c61/cs232/0302[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c61/cs232/0302[00m$ [C[26Psh 14.139.184.215
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ca14.139.184.215s14.139.184.215k14.139.184.215@14.139.184.215[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+ssh: connect to host 14.139.184.215 port 22: Network is unreachable
+]0;s4c2@CC2-26: ~/ceccs18c61/cs232/0302[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c61/cs232/0302[00m$ pdftotext result.pdf
+I/O Error: Couldn't open file 'result.pdf': No such file or directory.
+]0;s4c2@CC2-26: ~/ceccs18c61/cs232/0302[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c61/cs232/0302[00m$ pdftotext result.pdf
+I/O Error: Couldn't open file 'result.pdf': No such file or directory.
+]0;s4c2@CC2-26: ~/ceccs18c61/cs232/0302[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c61/cs232/0302[00m$ pdftotext result.pdf
+I/O Error: Couldn't open file 'result.pdf': No such file or directory.
+]0;s4c2@CC2-26: ~/ceccs18c61/cs232/0302[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c61/cs232/0302[00m$ pdftotext result.pdf_.pdfC.pdfH.pdfN.pdf[C[C[C[C
+]0;s4c2@CC2-26: ~/ceccs18c61/cs232/0302[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c61/cs232/0302[00m$ grep "chn[K[K[KCHN18CSgrep '002\|003\|005\|006\
+> \|007\|008\|012\|015\|018\|023\|024\|025\|028\|029\|035\|037\|039\|043\|046\|04 7\
+> \|048\|049\|051\|052\|053\|055\|56\|057\|060\|061\|063\|064\|068\|069\|071\|073 \|
+> |076\|079\|080\|082\|083\|084\|090\|092\|093\|095\|096\|097\|100\|101\|103\|104 \|
+> |108\|109\|110\|111\|113\|114\|115\|118\|120[6Pgrep "CHN18CSgrep '002\|003\|005\|006\
+\|007\|008\|012\|015\|018\|023\|024\|025\|028\|029\|035\|037\|039\|043\|046\|047\ 
+\|048\|049\|051\|052\|053\|055\|56\|057\|060\|061\|063\|064\|068\|069\|071\|073\| 
+|076\|079\|080\|082\|083\|084\|090\|092\|093\|095\|096\|097\|100\|101\|103\|104\| [A[A[A[A[A[A[C[C[14Ppdftotext result_CHN.pdf
+[K
+[K
+[K
+[K
+[K
+[K[A[A[A[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgrep "CHN18CSgrep '002\|003\|005\|006\
+\|007\|008\|012\|015\|018\|023\|024\|025\|028\|029\|035\|037\|039\|043\|046\|047\ 
+\|048\|049\|051\|052\|053\|055\|56\|057\|060\|061\|063\|064\|068\|069\|071\|073\| 
+|076\|079\|080\|082\|083\|084\|090\|092\|093\|095\|096\|097\|100\|101\|103\|104\| [A[A[A[A[A[A[C[C|108\|109\|110\|111\|113\|114\|115\|118\|120
+[K
+[K
+[K
+[K
+[K
+[K[A[A[A[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[6Pgrep "CHN18CSgrep '002\|003\|005\|006\
+\|007\|008\|012\|015\|018\|023\|024\|025\|028\|029\|035\|037\|039\|043\|046\|047\ 
+\|048\|049\|051\|052\|053\|055\|56\|057\|060\|061\|063\|064\|068\|069\|071\|073\| 
+|076\|079\|080\|082\|083\|084\|090\|092\|093\|095\|096\|097\|100\|101\|103\|104\| [A[A[A[A[A[A[C[C[14Ppdftotext result_CHN.pdf
+[K
+[K
+[K
+[K
+[K
+[K[A[A[A[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[4P.pdf[C[Cssh ask@14.139.184.215[C[C[Ccp network.txt ask@14.139.184.215:/home/ceccs18c61/cs232/0302/metwork.txt[C[C[Csh 14.139.184.215[K[C[C[Ccp network.txt 14.139.184.215:/home/ceccs18c61/cs232/0302/metwork.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[36Pask@14.139.184.215[4P14.139.184.215[C[C[C[12Psh[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cs1[K[C[Cifup -v network.txt[C[C[C[C[C[C[C[Cn[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat /etc/resolv.confe.conf^C
+]0;s4c2@CC2-26: ~/ceccs18c61/cs232/0302[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c61/cs232/0302[00m$ GREP[K[K[K[Kge[Krep ' CHN18CA~S[K[K[KS[K[K[K[K[K[K[K[K[K[K[K[K[K[Kgrep "CHN18CSgrep '002\|003\|005\|006\
+\|007\|008\|012\|015\|018\|023\|024\|025\|028\|029\|035\|037\|039\|043\|046\|047\ 
+\|048\|049\|051\|052\|053\|055\|56\|057\|060\|061\|063\|064\|068\|069\|071\|073\| 
+|076\|079\|080\|082\|083\|084\|090\|092\|093\|095\|096\|097\|100\|101\|103\|104\| [A[A[A[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[14Ppdftotext result_CHN.pdf
+[K
+[K
+[K
+[K
+[K
+[K[A[A[A[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[4P.pdfssh ask@14.139.184.215cp network.txt ask@14.139.184.215:/home/cecccs18c61/cs232/0302/metwork.txt[C[K[K[K[K[K[K[K[K[K[K[K[K[1P0302[1P0302[1P0302[1P0302[1P0302[1P0302[1P0302[1P0302[1P0302[1P0302[1P0302[1P0302[C[C[1P0302[C[1P0302[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C03[1P02[A]0;s4c2@CC2-26: ~/ceccs18c61/cs232/0302[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c61/cs232/0302[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C030[1P2[A]0;s4c2@CC2-26: ~/ceccs18c61/cs232/0302[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c61/cs232/0302[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C0302[K[A]0;s4c2@CC2-26: ~/ceccs18c61/cs232/0302[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c61/cs232/0302[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C0302 [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P0302
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P0302[1P0302[1P0302[1P0302[C[C[C[C
+ssh: connect to host 14.139.184.215 port 22: Network is unreachable
+lost connection
+]0;s4c2@CC2-26: ~/ceccs18c61/cs232/0302[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c61/cs232/0302[00m$ scp network.txt ask@14.139.184.215:0302[1P4.139.184.215:0302[1P.139.184.215:0302[1P139.184.215:0302[1P39.184.215:0302[1P9.184.215:0302[1P.184.215:0302[1P184.215:0302[1P84.215:0302[1P4.215:0302[1P.215:0302[1P215:0302[1P15:0302[1P5:0302[1P:03021:03029:03022:0302.:03021:03026:03028:0302.:03020:0302.:03023:03020:0302[C[C[C[C[C
+.
+              |
+.  .    . .-. | .-..-. .--.--. .-.
+ \  \  / (.-' |(  (   )|  |  |(.-'
+  `' `'   `--'` `-'`-' '  '  ` `--'
+ask@192.168.0.30's password: 
+Permission denied, please try again.
+ask@192.168.0.30's password: ]0;s4c2@CC2-26: ~/ceccs18c61/cs232/0302[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c61/cs232/0302[00m$ SSSH CW[KECCS18C61[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K ssh ceccs18c61@192.168.0.30
+.
+              |
+.  .    . .-. | .-..-. .--.--. .-.
+ \  \  / (.-' |(  (   )|  |  |(.-'
+  `' `'   `--'` `-'`-' '  '  ` `--'
+ceccs18c61@192.168.0.30's password: 
+Permission denied, please try again.
+ceccs18c61@192.168.0.30's password: 
+Permission denied, please try again.
+ceccs18c61@192.168.0.30's password: 
+
+]0;s4c2@CC2-26: ~/ceccs18c61/cs232/0302[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c61/cs232/0302[00m$ scp network.txt ask@192.168.0.30:0302[Kscp network.txt ask@192.168.0.30:03024.139.184.215:0302[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Pgrep "CHN18CSgrep '002\|003\|005\|006\
+\|007\|008\|012\|015\|018\|023\|024\|025\|028\|029\|035\|037\|039\|043\|046\|047\ 
+\|048\|049\|051\|052\|053\|055\|56\|057\|060\|061\|063\|064\|068\|069\|071\|073\| 
+|076\|079\|080\|082\|083\|084\|090\|092\|093\|095\|096\|097\|100\|101\|103\|104\| [A[A[A[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[14Ppdftotext result_CHN.pdf
+[K
+[K
+[K
+[K
+[K
+[K[A[A[A[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgrep "CHN18CSgrep '002\|003\|005\|006\
+\|007\|008\|012\|015\|018\|023\|024\|025\|028\|029\|035\|037\|039\|043\|046\|047\ 
+\|048\|049\|051\|052\|053\|055\|56\|057\|060\|061\|063\|064\|068\|069\|071\|073\| 
+|076\|079\|080\|082\|083\|084\|090\|092\|093\|095\|096\|097\|100\|101\|103\|104\| [A[A[A[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cscp network.txt ask@14.139.184.215:0302
+[K
+[K
+[K
+[K
+[K
+[K[A[A[A[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2P92.168.0.30:0302[Kssh cs18c61@192.06[K[K168.0.30
+.
+              |
+.  .    . .-. | .-..-. .--.--. .-.
+ \  \  / (.-' |(  (   )|  |  |(.-'
+  `' `'   `--'` `-'`-' '  '  ` `--'
+cs18c61@192.168.0.30's password: 
+Welcome to elementary OS 0.4.1 Loki (GNU/Linux 4.13.0-32-generic x86_64)
+
+ * Website:  http://elementary.io/
+
+402 packages can be updated.
+0 updates are security updates.
+
+$ ls
+2001  examples.desktop	report.txt  work.txt
+$ scp report.txtx  cs18c61@192.168.0.30:0302
+The authenticity of host '192.168.0.30 (192.168.0.30)' can't be established.
+ECDSA key fingerprint is SHA256:pkLWQEXAwg4Zdh5CXNYydUTPcU7dwDFxyzJnqJ01m/s.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added '192.168.0.30' (ECDSA) to the list of known hosts.
+.
+              |
+.  .    . .-. | .-..-. .--.--. .-.
+ \  \  / (.-' |(  (   )|  |  |(.-'
+  `' `'   `--'` `-'`-' '  '  ` `--'
+cs18c61@192.168.0.30's password: 
+report.txt                                       0%    0     0.0KB/s   --:-- ETAreport.txt                                     100%  904     0.9KB/s   00:00    
+$ rsync work.txt cs18c61@192.168.030^[[D^[[C^[[D              .30:0302
+.
+              |
+.  .    . .-. | .-..-. .--.--. .-.
+ \  \  / (.-' |(  (   )|  |  |(.-'
+  `' `'   `--'` `-'`-' '  '  ` `--'
+cs18c61@192.168.0.30's password: 
+$ ^[[A    rsync work.txt              rcyns -av 0302/network.txt
+-sh: 4: rcyns: not found
+$ ^[[A^[[B        rsync -av 0302/network.txt
+sending incremental file list
+rsync: change_dir "/home/cs18c61//0302" failed: Not a directory (20)
+
+sent 20 bytes  received 12 bytes  64.00 bytes/sec
+total size is 0  speedup is 0.00
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1183) [sender=3.1.1]
+$ exit
+Connection to 192.168.0.30 closed.
+]0;s4c2@CC2-26: ~/ceccs18c61/cs232/0302[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c61/cs232/0302[00m$ sc[K[Kscp netqw[K[Kwork.txt cs18c61@16[K90.168.0.30"[K:0302
+ssh: connect to host 190.168.0.30 port 22: Network is unreachable
+lost connection
+]0;s4c2@CC2-26: ~/ceccs18c61/cs232/0302[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c61/cs232/0302[00m$ scp network.txt cs18c61@190.168.0.30:0302
+ssh: connect to host 190.168.0.30 port 22: Network is unreachable
+lost connection
+]0;s4c2@CC2-26: ~/ceccs18c61/cs232/0302[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c61/cs232/0302[00m$ scp network.txt cs18c61@190.168.0.30:0302[1P[1P[1P[1@r[1@s[1@y[1@n[1@c[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+ssh: connect to host 190.168.0.30 port 22: Network is unreachable
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(226) [sender=3.1.1]
+]0;s4c2@CC2-26: ~/ceccs18c61/cs232/0302[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c61/cs232/0302[00m$ rsync network.txt cs18c61@190.168.0.30:0302[C network.txt cs18c61@190.168.0.30:0302 [A]0;s4c2@CC2-26: ~/ceccs18c61/cs232/0302[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c61/cs232/0302[00m$ [C[C[C[C[C[C- network.txt cs18c61@190.168.0.30:03022[A]0;s4c2@CC2-26: ~/ceccs18c61/cs232/0302[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c61/cs232/0302[00m$ [C[C[C[C[C[C[Ca network.txt cs18c61@190.168.0.30:0302[A]0;s4c2@CC2-26: ~/ceccs18c61/cs232/0302[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c61/cs232/0302[00m$ [C[C[C[C[C[C[C[Cv network.txt cs18c61@190.168.0.30:0302[A]0;s4c2@CC2-26: ~/ceccs18c61/cs232/0302[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c61/cs232/0302[00m$ [C[C[C[C[C[C[C[C[C[C network.txt cs18c61@190.168.0.30:0302[A]0;s4c2@CC2-26: ~/ceccs18c61/cs232/0302[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c61/cs232/0302[00m$ [C[C[C[C[C[C[C[C[C[C0 network.txt cs18c61@190.168.0.30:0302[A]0;s4c2@CC2-26: ~/ceccs18c61/cs232/0302[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c61/cs232/0302[00m$ [C[C[C[C[C[C[C[C[C[C[C3 network.txt cs18c61@190.168.0.30:0302[A]0;s4c2@CC2-26: ~/ceccs18c61/cs232/0302[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c61/cs232/0302[00m$ [C[C[C[C[C[C[C[C[C[C[C[C0 network.txt cs18c61@190.168.0.30:0302[A]0;s4c2@CC2-26: ~/ceccs18c61/cs232/0302[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c61/cs232/0302[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C2 network.txt cs18c61@190.168.0.30:0302[A]0;s4c2@CC2-26: ~/ceccs18c61/cs232/0302[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c61/cs232/0302[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C/ network.txt cs18c61@190.168.0.30:0302[A]0;s4c2@CC2-26: ~/ceccs18c61/cs232/0302[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c61/cs232/0302[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C network.txt cs18c61@190.168.0.[1P30:0302[A]0;s4c2@CC2-26: ~/ceccs18c61/cs232/0302[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c61/cs232/0302[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C/ network.txt cs18c61@190.168.0.30:0302[A]0;s4c2@CC2-26: ~/ceccs18c61/cs232/0302[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c61/cs232/0302[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cnetwork.txt cs18c61@190.168.0.[1P30:0302[A]0;s4c2@CC2-26: ~/ceccs18c61/cs232/0302[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c61/cs232/0302[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C.network.txt cs18c61@190.168.0.30:0302[A]0;s4c2@CC2-26: ~/ceccs18c61/cs232/0302[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c61/cs232/0302[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cnetwork.txt cs18c61@190.168.0.[1P30:0302[A]0;s4c2@CC2-26: ~/ceccs18c61/cs232/0302[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c61/cs232/0302[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccs18c61@190.168.0.3[1P0:0302[A]0;s4c2@CC2-26: ~/ceccs18c61/cs232/0302[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c61/cs232/0302[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cs18c61@190.168.0.30[1P:0302[A]0;s4c2@CC2-26: ~/ceccs18c61/cs232/0302[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c61/cs232/0302[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C18c61@190.168.0.30:[1P0302[A]0;s4c2@CC2-26: ~/ceccs18c61/cs232/0302[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c61/cs232/0302[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C8c61@190.168.0.30:0[1P302[A]0;s4c2@CC2-26: ~/ceccs18c61/cs232/0302[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c61/cs232/0302[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cc61@190.168.0.30:03[1P02[A]0;s4c2@CC2-26: ~/ceccs18c61/cs232/0302[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c61/cs232/0302[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C61@190.168.0.30:030[1P2[A]0;s4c2@CC2-26: ~/ceccs18c61/cs232/0302[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c61/cs232/0302[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C1@190.168.0.30:0302[K[A]0;s4c2@CC2-26: ~/ceccs18c61/cs232/0302[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c61/cs232/0302[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C@190.168.0.30:0302 [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P190.168.0.30:0302
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P90.168.0.30:0302[1P0.168.0.30:0302[1P.168.0.30:0302[1P168.0.30:0302[1P68.0.30:0302[1P8.0.30:0302[1P.0.30:0302[1P0.30:0302[1P.30:0302[1P30:0302[1P0:0302[1P:0302[1P0302[1P302[1P02[1P2[K
+sending incremental file list
+rsync: change_dir "/home/s4c2/ceccs18c61/cs232/0302//0302" failed: No such file or directory (2)
+
+sent 20 bytes  received 12 bytes  64.00 bytes/sec
+total size is 0  speedup is 0.00
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1183) [sender=3.1.1]
+]0;s4c2@CC2-26: ~/ceccs18c61/cs232/0302[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c61/cs232/0302[00m$ nano scrit[Kpt.sh
+[?1049h[1;36r(B[m[4l[?7h[?1h=[?1h=[?1h=[39;49m[?25l[39;49m(B[m[H[2J[34;35H(B[0;7m[ New File ][3d(B[m[?12l[?25h[H[39;49m(B[0;7m  GNU nano 2.5.3              File: script.sh                                    [35;1H^G(B[m Get Help  (B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[36d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Uncut Text(B[0;7m^T(B[m To Linter (B[0;7m^_(B[m Go To Line[3d[34d[J[36;81H[36;1H[?1049l[?1l>]0;s4c2@CC2-26: ~/ceccs18c61/cs232/0302[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c61/cs232/0302[00m$ nano script.shrsync -av 0302/network.txtnetwork.txt cs18c61@190.168.0.30:0302[17P-av 0302/network.txt
+sending incremental file list
+rsync: change_dir "/home/s4c2/ceccs18c61/cs232/0302//0302" failed: No such file or directory (2)
+
+sent 20 bytes  received 12 bytes  64.00 bytes/sec
+total size is 0  speedup is 0.00
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1183) [sender=3.1.1]
+]0;s4c2@CC2-26: ~/ceccs18c61/cs232/0302[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c61/cs232/0302[00m$ rsync -av 0302/network.txt[12Pnano script.shrsync -av 0302/network.txtnetwork.txt cs18c61@190.168.0.30:0302
+ssh: connect to host 190.168.0.30 port 22: Network is unreachable
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(226) [sender=3.1.1]
+]0;s4c2@CC2-26: ~/ceccs18c61/cs232/0302[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c61/cs232/0302[00m$ rsync network.txt cs18c61@190.168.0.30:0302[17P-av 0302/network.txt[12Pnano script.shrsync -av 0302/network.txtnetwork.txt cs18c61@190.168.0.30:0302[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2Pscp[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+ssh: connect to host 190.168.0.30 port 22: Network is unreachable
+lost connection
+]0;s4c2@CC2-26: ~/ceccs18c61/cs232/0302[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c61/cs232/0302[00m$ scp network.txt cs18c61@190.168.0.30:0302
+ssh: connect to host 190.168.0.30 port 22: Network is unreachable
+lost connection
+]0;s4c2@CC2-26: ~/ceccs18c61/cs232/0302[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c61/cs232/0302[00m$ ssh[K[K[Kscp network.txt cs18c61@190.168.0.30:0302[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2@rsync[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[17P-av 0302/network.txtnetwork.txt cs18c61@190.168.0.30:0302[17P-av 0302/network.txt[1Pnetwork.txt[1Pnetwork.txt[1Pnetwork.txt[1Pnetwork.txt[1Pnetwork.txt[C[C[C[C[C[C[C[C[C[C[C
+sending incremental file list
+-rw-rw-r--            102 2020/02/03 14:04:07 network.txt
+
+sent 62 bytes  received 74 bytes  272.00 bytes/sec
+total size is 102  speedup is 0.75
+]0;s4c2@CC2-26: ~/ceccs18c61/cs232/0302[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c61/cs232/0302[00m$ rsync -av network.txtscp network.txt cs18c61@190.168.0.30:0302[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[20Prsync -av network.txt[Kexit
+exit
+There are stopped jobs.
+]0;s4c2@CC2-26: ~/ceccs18c61/cs232/

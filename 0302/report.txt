@@ -1,0 +1,76 @@
+CEC CS 18 C61
+Vishwanath R Athrey
+
+--------------------------------
+#1: task-4
+---------------------------------
+Command/Shell script/Program name
+
+	ssh
+	rsync
+	scp
+---------------------------------
+
+Input: (If relevant)
+---------------
+
+--------------------------------
+Output: or Input & Output (whichever is applicable)
+
+	ssh cs18c612192.168.0.30 is used to open a secure connection to remote
+
+	scp network.txt cs18c61@192.068.0.30:0302 is used to upload network.txt to 0302
+
+	rsync is used to sync file
+-------------------
+Remarks if any:
+
+
+
+
+
+-------------------------------------
+-------------------------------------
+#2:task-3
+---------------------------------
+Command/Shell script/Program name
+
+	ifconfig
+	route -n
+	route add
+	route add default gw 192.168.0.30
+	ifup
+---------------------------------
+
+Input: (If relevant)
+---------------
+
+--------------------------------
+Output: 
+
+        # ifconfig -a displays all available network interfaces
+	
+	# route -n displays kernal routing table
+	
+	# route add, is used add a new route to the table,
+	# route add default gw 192.168.0.2, a default gateway in this case
+-------------------
+Remarks if any:
+
+
+
+
+
+-------------------------------------
+-------------------------------------
+#2:
+
+#3:
+
+#4:
+
+#5:
+
+
+
+
