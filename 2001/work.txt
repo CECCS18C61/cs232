@@ -1,0 +1,583 @@
+Script started on Wednesday 01 January 2003 07:17:00 AM IST
+]0;lab2@lab2-AcerPower-Series: ~/ceccs18c61/cs232/2001lab2@lab2-AcerPower-Series:~/ceccs18c61/cs232/2001$ is
+is: command not found
+]0;lab2@lab2-AcerPower-Series: ~/ceccs18c61/cs232/2001lab2@lab2-AcerPower-Series:~/ceccs18c61/cs232/2001$ ls
+work.txt
+]0;lab2@lab2-AcerPower-Series: ~/ceccs18c61/cs232/2001lab2@lab2-AcerPower-Series:~/ceccs18c61/cs232/2001$ ls -l
+total 0
+-rw-rw-r-- 1 lab2 lab2 0 Jan  1 07:17 work.txt
+]0;lab2@lab2-AcerPower-Series: ~/ceccs18c61/cs232/2001lab2@lab2-AcerPower-Series:~/ceccs18c61/cs232/2001$ ll> [K[K > abc.y[Ktxt
+]0;lab2@lab2-AcerPower-Series: ~/ceccs18c61/cs232/2001lab2@lab2-AcerPower-Series:~/ceccs18c61/cs232/2001$ ll > abc.txt[7Ps -l[Kisll > abc.tctxtsort -nk7 fn[2P fnfield seperator: TAB[10Pll>abc.txt~ /.bash_aliases[6Punalias llalias ll='ls al'[Kls ab* -d[2P-ltr[K[Ktrab* -d[4Palias ll='ls al'[6Punalias ll~ /.bash_aliases[6Pll>abc.txtfield seperator: TAB[10Psort -n fnk7 fnll > abc.txtctis[Kls -ll > abc.txt[Kcat abc[C abc> abc[C abc[C[1Pabc[C[C[C[C.txt
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+^Z
+[1]+  Stopped                 cat > abc.txt
+]0;lab2@lab2-AcerPower-Series: ~/ceccs18c61/cs232/2001lab2@lab2-AcerPower-Series:~/ceccs18c61/cs232/2001$ cat > abc.txt[1Pll[C[C[C[C[C[C[C[C[C[C[1@cat[C[C[C[C[C[C[C[C[C[C[1P[1P abc.txt
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+]0;lab2@lab2-AcerPower-Series: ~/ceccs18c61/cs232/2001lab2@lab2-AcerPower-Series:~/ceccs18c61/cs232/2001$ sort -n abc.txt
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+]0;lab2@lab2-AcerPower-Series: ~/ceccs18c61/cs232/2001lab2@lab2-AcerPower-Series:~/ceccs18c61/cs232/2001$ sort -n abc.txt[Ck abc.txt7 abc.txt[C[C[C[C[C[C[C[C
+1
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+2
+20
+3
+4
+5
+6
+7
+8
+9
+]0;lab2@lab2-AcerPower-Series: ~/ceccs18c61/cs232/2001lab2@lab2-AcerPower-Series:~/ceccs18c61/cs232/2001$ sort -nk7 abc.txt[1@r[C[C[C[C[C[C[C[C[C[C[C
+9
+8
+7
+6
+5
+4
+3
+20
+2
+19
+18
+17
+16
+15
+14
+13
+12
+11
+10
+1
+]0;lab2@lab2-AcerPower-Series: ~/ceccs18c61/cs232/2001lab2@lab2-AcerPower-Series:~/ceccs18c61/cs232/2001$ sort -rnk7 abc.txt[1P[1P[1@t[1@'[1@$[1@\[1@t[1@'[1@ [1@-[C[C[C[C[C[C[C[C[C[C
+sort: multi-character tab `$\\t'
+]0;lab2@lab2-AcerPower-Series: ~/ceccs18c61/cs232/2001lab2@lab2-AcerPower-Series:~/ceccs18c61/cs232/2001$ sort -t'$\t' -k7 abc.txt[1P[C[C[C[C[C[C[C[C[C[C[C
+sort: multi-character tab `$\\t-k7'
+]0;lab2@lab2-AcerPower-Series: ~/ceccs18c61/cs232/2001lab2@lab2-AcerPower-Series:~/ceccs18c61/cs232/2001$ sort -t'$\t'-k7 abc.txt[1@\[C[C[1@ [C[C[C[C[C[C[C[C[C[C[C
+sort: multi-character tab `$\\\\t'
+]0;lab2@lab2-AcerPower-Series: ~/ceccs18c61/cs232/2001lab2@lab2-AcerPower-Series:~/ceccs18c61/cs232/2001$ cut -f3 abc.txt
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+]0;lab2@lab2-AcerPower-Series: ~/ceccs18c61/cs232/2001lab2@lab2-AcerPower-Series:~/ceccs18c61/cs232/2001$ cut -f3 abc.txt[1@-[C[1Pabc.txt[1Pbc.txt[1Pc.txt[1P.txt[1Ptxt[1Pxt[1Pt[K
+3^Z
+[2]+  Stopped                 cut -f-3
+]0;lab2@lab2-AcerPower-Series: ~/ceccs18c61/cs232/2001lab2@lab2-AcerPower-Series:~/ceccs18c61/cs232/2001$ cut -f-3
+3
+3^Z
+[3]+  Stopped                 cut -f-3
+]0;lab2@lab2-AcerPower-Series: ~/ceccs18c61/cs232/2001lab2@lab2-AcerPower-Series:~/ceccs18c61/cs232/2001$ cut -f-33 abc.txt[10@sort -t'$\\t' -k7[C[C[C[C[C[C[C[C[10Pcut -f3[C[C[C[C[C[C[C[C
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+]0;lab2@lab2-AcerPower-Series: ~/ceccs18c61/cs232/2001lab2@lab2-AcerPower-Series:~/ceccs18c61/cs232/2001$ cut -f3 abc.txt-3[K3 abc.txt[10@sort -t'$\\t' -k7[C[C[C[C[C[C[C[C[10Pcut -f3[C[C[C[C[C[C[C[C[1P[1P abc.txtb abc.txt1 abc.txt[C abc.txt[1Pabc.txt[1P abc.txt[C abc.txt1 abc.txt[C[C[C[C[C[C[C[C
+1
+2
+3
+4
+5
+6
+7
+8
+9
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+2
+]0;lab2@lab2-AcerPower-Series: ~/ceccs18c61/cs232/2001lab2@lab2-AcerPower-Series:~/ceccs18c61/cs232/2001$ cut -b 1 abc.txt[1@0[C[C[C[C[C[C[C[C[C[C[1@,[C[C[C[C[C[C[C[C[C
+cut: fields and positions are numbered from 1
+Try `cut --help' for more information.
+]0;lab2@lab2-AcerPower-Series: ~/ceccs18c61/cs232/2001lab2@lab2-AcerPower-Series:~/ceccs18c61/cs232/2001$ cut -b 0,1 abc.txt[C[C[1P[C[C[C[C[C[C[C[C[C
+1
+2
+3
+4
+5
+6
+7
+8
+9
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+2
+]0;lab2@lab2-AcerPower-Series: ~/ceccs18c61/cs232/2001lab2@lab2-AcerPower-Series:~/ceccs18c61/cs232/2001$ cut -b 01 abc.txt[Kcut -b 01 abc.txt[C[1P[C[C[C[C[C[C[C[C[C
+1
+2
+3
+4
+5
+6
+7
+8
+9
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+2
+]0;lab2@lab2-AcerPower-Series: ~/ceccs18c61/cs232/2001lab2@lab2-AcerPower-Series:~/ceccs18c61/cs232/2001$ cut -b 1 abc.txt[Kcut -b 1 abc.txt[1P abc.txt0 abc.txt[C[C[C[C[C[C[C[C
+cut: fields and positions are numbered from 1
+Try `cut --help' for more information.
+]0;lab2@lab2-AcerPower-Series: ~/ceccs18c61/cs232/2001lab2@lab2-AcerPower-Series:~/ceccs18c61/cs232/2001$ cut -b 0 abc.txt1[C[C[C[C[C[C[C[C[1@0[C[C[C[C[C[C[C[C[C[1P[C[C[C[C[C[C[C[C[C[1P abc.txt2 abc.txt
+
+
+
+
+
+
+
+
+
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+0
+]0;lab2@lab2-AcerPower-Series: ~/ceccs18c61/cs232/2001lab2@lab2-AcerPower-Series:~/ceccs18c61/cs232/2001$ cut -b 2 abc.txt0[C[C[C[C[C[C[C[C1[C[C[C[C[C[C[C[C[1@0[C[C[C[C[C[C[C[C[C[1@,[C[C[C[C[C[C[C[C[C[2P[C[C[C[C[C[C[C[C[C[1Pf3[C[C[C[C[C[C[C[C-3[K3 abc.txt[10@sort -t'$\\t' -k7[C[C[C[C[C[C[C[C[2Pt'[C[C[C[C[C[C[C[C[C[C[C[1@ [C[C[C[C[C[C[C[C[C[C[C[6Prn[C[C[C[C[C[C[C[C[C[C[1P[C[C[C[C[C[C[C[C[C[C[C[2P abc.txt[4Pcat[C[C[C[C[C[C[C[C> abc.txt
+1234
+1 2345
+3456
+4567
+5678
+6789
+7890
+8901
+9012
+0123
+^Z
+[4]+  Stopped                 cat > abc.txt
+]0;lab2@lab2-AcerPower-Series: ~/ceccs18c61/cs232/2001lab2@lab2-AcerPower-Series:~/ceccs18c61/cs232/2001$ cat > abc.txt[3@ut -b 2[C[C[C[C[C[C[C[C[1P[1@c[C[C[1P abc.txt1 abc.txt[C[C[C[C[C[C[C[C
+1
+2
+3
+4
+5
+6
+7
+8
+9
+0
+]0;lab2@lab2-AcerPower-Series: ~/ceccs18c61/cs232/2001lab2@lab2-AcerPower-Series:~/ceccs18c61/cs232/2001$ cut -c 1 abc.txt[3Pat >[C[C[C[C[C[C[C[C[3@ut -b 2[C[C[C[C[C[C[C[C[3Pat >[C[C[C[C[C[C[C[C[1P abc.txt[C[C[C[C[C[C[C[C
+1234
+2345
+3456
+4567
+5678
+6789
+7890
+8901
+9012
+0123
+]0;lab2@lab2-AcerPower-Series: ~/ceccs18c61/cs232/2001lab2@lab2-AcerPower-Series:~/ceccs18c61/cs232/2001$ cat  abc.txt[4@ut -c 1[C[C[C[C[C[C[C[C[1P abc.txt2 abc.txt
+2
+3
+4
+5
+6
+7
+8
+9
+0
+1
+]0;lab2@lab2-AcerPower-Series: ~/ceccs18c61/cs232/2001lab2@lab2-AcerPower-Series:~/ceccs18c61/cs232/2001$ cut -c 2 abc.txt[C[C[1P abc.txt3 abc.txt
+3
+4
+5
+6
+7
+8
+9
+0
+1
+2
+]0;lab2@lab2-AcerPower-Series: ~/ceccs18c61/cs232/2001lab2@lab2-AcerPower-Series:~/ceccs18c61/cs232/2001$ cut -c 3 abc.txt[1P abc.txt4 abc.txt
+4
+5
+6
+7
+8
+9
+0
+1
+2
+3
+]0;lab2@lab2-AcerPower-Series: ~/ceccs18c61/cs232/2001lab2@lab2-AcerPower-Series:~/ceccs18c61/cs232/2001$ cut -c 4 abc.txt[C[1P abc.txt5 abc.txt
+
+
+
+
+
+
+
+
+
+
+]0;lab2@lab2-AcerPower-Series: ~/ceccs18c61/cs232/2001lab2@lab2-AcerPower-Series:~/ceccs18c61/cs232/2001$ cut -c 5 abc.txt[1P abc.txt1 abc.txt, abc.txt2 abc.txt[C[C[C[C[C[C[C[C
+12
+23
+34
+45
+56
+67
+78
+89
+90
+01
+]0;lab2@lab2-AcerPower-Series: ~/ceccs18c61/cs232/2001lab2@lab2-AcerPower-Series:~/ceccs18c61/cs232/2001$ cut -c 1,2 abc.txt[C[C[C[1P abc.txt4 abc.txt
+14
+25
+36
+47
+58
+69
+70
+81
+92
+03
+]0;lab2@lab2-AcerPower-Series: ~/ceccs18c61/cs232/2001lab2@lab2-AcerPower-Series:~/ceccs18c61/cs232/2001$ cut -c 1,4 abc.txt[1P[1@4
+4
+5
+6
+7
+8
+9
+0
+1
+2
+3
+]0;lab2@lab2-AcerPower-Series: ~/ceccs18c61/cs232/2001lab2@lab2-AcerPower-Series:~/ceccs18c61/cs232/2001$ cut -c 4,4 abc.txt[1P abc.txt3 abc.txt
+34
+45
+56
+67
+78
+89
+90
+01
+12
+23
+]0;lab2@lab2-AcerPower-Series: ~/ceccs18c61/cs232/2001lab2@lab2-AcerPower-Series:~/ceccs18c61/cs232/2001$ cut -c 4,3 abc.txt[C[1P[1@3[C[1P abc.txt4 abc.txt[C[C[C[C[C[C[C[C
+34
+45
+56
+67
+78
+89
+90
+01
+12
+23
+]0;lab2@lab2-AcerPower-Series: ~/ceccs18c61/cs232/2001lab2@lab2-AcerPower-Series:~/ceccs18c61/cs232/2001$ 00000[K[K[K[K[Kcut -c 3,4 abc.txt4,3[C[C[C[C[C[C[C[C4[C[C[C[C[C[C[C[C1[C[C[C[C[C[C[C[C[C[C2[C[C[C[C[C[C[C[C[2P5[C[C[C[C[C[C[C[C4[C[C[C[C[C[C[C[C3[C[C[C[C[C[C[C[C2[C[C[C[C[C[C[C[C[4Pat [C[C[C[C[C[C[C[C[4@ut -c 1[C[C[C[C[C[C[C[C[3Pat >[C[C[C[C[C[C[C[C[3@ut -b 2[C[C[C[C[C[C[C[C0[C[C[C[C[C[C[C[C1[C[C[C[C[C[C[C[C[1@0[C[C[C[C[C[C[C[C[C[1@,[C[C[C[C[C[C[C[C[C[2P[C[C[C[C[C[C[C[C[C[1Pf3[C[C[C[C[C[C[C[C[1@b 1[C[C[C[C[C[C[C[C[2@0,[C[C[C[C[C[C[C[C[C[1P[C[C[C[C[C[C[C[C[C[1P[C[C[C[C[C[C[C[C[C0[C[C[C[C[C[C[C[C2[C[C[C[C[C[C[C[C[3Pat >[C[C[C[C[C[C[C[C[3@ut -c 1[C[C[C[C[C[C[C[C[4Pat [C[C[C[C[C[C[C[C[4@ut -c 2[C[C[C[C[C[C[C[C3[C[C[C[C[C[C[C[C4[C[C[C[C[C[C[C[C5[C[C[C[C[C[C[C[C[2@1,2[C[C[C[C[C[C[C[C4[C[C[C[C[C[C[C[C4[C[C[C[C[C[C[C[C[C[C3[C[C[C[C[C[C[C[C3,4[C[C[C[C[C[C[C[C[Kll > b[Kcba.txt
+]0;lab2@lab2-AcerPower-Series: ~/ceccs18c61/cs232/2001lab2@lab2-AcerPower-Series:~/ceccs18c61/cs232/2001$ cat <[K.[K> cba.txt
+anandhu
+ve ivek
+aravind
+sreejith
+shijin
+jibin
+sarath
+ji  akhuil   il
+^Z
+[5]+  Stopped                 cat > cba.txt
+]0;lab2@lab2-AcerPower-Series: ~/ceccs18c61/cs232/2001lab2@lab2-AcerPower-Series:~/ceccs18c61/cs232/2001$ cat > cba.txt[1Pll[C[C[C[C[C[C[C[C[C[Ccut -c 3,4 abc.txt4,3[C[C[C[C[C[C[C[C4[C[C[C[C[C[C[C[C1[C[C[C[C[C[C[C[C[C[C2[C[C[C[C[C[C[C[C[2P5[C[C[C[C[C[C[C[C4[C[C[C[C[C[C[C[C3[C[C[C[C[C[C[C[C2[C[C[C[C[C[C[C[C[4Pat [C[C[C[C[C[C[C[C[4@ut -c 1[C[C[C[C[C[C[C[C[3Pat >[C[C[C[C[C[C[C[C[3@ut -b 2[C[C[C[C[C[C[C[C0[C[C[C[C[C[C[C[C1[C[C[C[C[C[C[C[C[1@0[C[C[C[C[C[C[C[C[C[1@,[C[C[C[C[C[C[C[C[C[2P[C[C[C[C[C[C[C[C[C[1Pf3[C[C[C[C[C[C[C[C-3[K3 abc.txt[10@sort -t'$\\t' -k7[C[C[C[C[C[C[C[C[2Pt'[C[C[C[C[C[C[C[C[C[C[C[1@ [C[C[C[C[C[C[C[C[C[C[C[6Prn[C[C[C[C[C[C[C[C[C[C[1P[C[C[C[C[C[C[C[C[C[C[C[2P abc.txt[4Pcat[C[C[C[C[C[C[C[C[4@sort -n[C[C[C[C[C[C[C[C[1Pc.txt[1Pc.txt[Cb.txta.txt[C[C[C[C
+akhil
+anandhu
+aravind
+jibin
+sarath
+shijin
+sreejith
+vivek
+]0;lab2@lab2-AcerPower-Series: ~/ceccs18c61/cs232/2001lab2@lab2-AcerPower-Series:~/ceccs18c61/cs232/2001$ sort -n cba.txtk cba.txt7 cba.txt[C[C[C[C[C[C[C[C
+akhil
+anandhu
+aravind
+jibin
+sarath
+shijin
+sreejith
+vivek
+]0;lab2@lab2-AcerPower-Series: ~/ceccs18c61/cs232/2001lab2@lab2-AcerPower-Series:~/ceccs18c61/cs232/2001$ sort -nk7 cba.txt[C[C[C[C[C[C[1@r
+vivek
+sreejith
+shijin
+sarath
+jibin
+aravind
+anandhu
+akhil
+]0;lab2@lab2-AcerPower-Series: ~/ceccs18c61/cs232/2001lab2@lab2-AcerPower-Series:~/ceccs18c61/cs232/2001$ sort -rnk7 cba.txt[Ksort -rnk7 cba.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[C[C[C[C[C[C[C[C[C[C[C[2P cba.txt[2Pcat >[C[C[C[C[C[C[C[C[1Pll[C[C[C[C[C[C[C[C[C[Ccut -c 3,4 abc.txt4,3[C[C[C[C[C[C[C[C4[C[C[C[C[C[C[C[C1[C[C[C[C[C[C[C[C[C[C4[C[C[C[C[C[C[C[C[C[C1[C[C[C[C[C[C[C[C[C[C[1Pbc.txt[1Pc.txt[Cb.txta.txt[C[C[C[C
+an
+ve
+av
+se
+sj
+ji
+sa
+ai
+]0;lab2@lab2-AcerPower-Series: ~/ceccs18c61/cs232/2001lab2@lab2-AcerPower-Series:~/ceccs18c61/cs232/2001$ cut -c 1,4 cba.txt[C[1P[1P cba.txt[C[C[C[C[C[C[C[C
+a
+v
+a
+s
+s
+j
+s
+a
+]0;lab2@lab2-AcerPower-Series: ~/ceccs18c61/cs232/2001lab2@lab2-AcerPower-Series:~/ceccs18c61/cs232/2001$ cut -c 1 cba.txt,4 cba.txtsort -rnk7[C[C[C[C[C[C[C[C[1P[C[C[C[C[C[C[C[C[C[C[C[2P cba.txt[2Pcat >[C[C[C[C[C[C[C[C[1Pll[C[C[C[C[C[C[C[C[C[Ccut -c 3,4 abc.txt4,3[C[C[C[C[C[C[C[C4[C[C[C[C[C[C[C[C3[C[C[C[C[C[C[C[C3,4[C[C[C[C[C[C[C[C[6Pll > cba.txt[1@cat[C[C[C[C[C[C[C[C[C[C[1P cba.txt
+anandhu
+vivek
+aravind
+sreejith
+shijin
+jibin
+sarath
+akhil
+]0;lab2@lab2-AcerPower-Series: ~/ceccs18c61/cs232/2001lab2@lab2-AcerPower-Series:~/ceccs18c61/cs232/2001$ grep 'a' bca.txt
+grep: bca.txt: No such file or directory
+]0;lab2@lab2-AcerPower-Series: ~/ceccs18c61/cs232/2001lab2@lab2-AcerPower-Series:~/ceccs18c61/cs232/2001$ grep 'a' bca.txt[C[1Pa.txtc ba.txt[C[1P ba.txt[Ccba.txt[C[C[C[C[C[C
+[01;31m[Ka[m[Kn[01;31m[Ka[m[Kndhu
+[01;31m[Ka[m[Kr[01;31m[Ka[m[Kvind
+s[01;31m[Ka[m[Kr[01;31m[Ka[m[Kth
+[01;31m[Ka[m[Kkhil
+]0;lab2@lab2-AcerPower-Series: ~/ceccs18c61/cs232/2001lab2@lab2-AcerPower-Series:~/ceccs18c61/cs232/2001$ grep 'a' cba.txt[C[1P[1@1[C[C[1Pba.txt[1Pa.txt[Cb.txtc.txt[C[C[C[C
+[01;31m[K1[m[K234
+890[01;31m[K1[m[K
+90[01;31m[K1[m[K2
+0[01;31m[K1[m[K23
+]0;lab2@lab2-AcerPower-Series: ~/ceccs18c61/cs232/2001lab2@lab2-AcerPower-Series:~/ceccs18c61/cs232/2001$ grep '1' abc.txt[1@2[C[C[C[C[C[C[C[C[C
+[01;31m[K12[m[K34
+90[01;31m[K12[m[K
+0[01;31m[K12[m[K3
+]0;lab2@lab2-AcerPower-Series: ~/ceccs18c61/cs232/2001lab2@lab2-AcerPower-Series:~/ceccs18c61/cs232/2001$ grep '12' abc.txt[C[1P[1@9[C[C[C[C[C[C[C[C[C
+]0;lab2@lab2-AcerPower-Series: ~/ceccs18c61/cs232/2001lab2@lab2-AcerPower-Series:~/ceccs18c61/cs232/2001$ grep '19' abc.txt[1@1[1P[C[C[C[C[C[C[C[C[C[C[C
+]0;lab2@lab2-AcerPower-Series: ~/ceccs18c61/cs232/2001lab2@lab2-AcerPower-Series:~/ceccs18c61/cs232/2001$ grep '91' abc.txt[1P[C, abc.txt' abc.txt1 abc.txt' abc.txt[C[C[C[C[C[C[C[C
+]0;lab2@lab2-AcerPower-Series: ~/ceccs18c61/cs232/2001lab2@lab2-AcerPower-Series:~/ceccs18c61/cs232/2001$ grep '9','1' abc.txt[1P[C[1P[C[C[C[C[C[C[C[C[C[C
+]0;lab2@lab2-AcerPower-Series: ~/ceccs18c61/cs232/2001lab2@lab2-AcerPower-Series:~/ceccs18c61/cs232/2001$ grep '9,1' abc.txt[1@0[1P[1P[C[C[C[C[C[C[C[C[C[C
+78[01;31m[K90[m[K
+8[01;31m[K90[m[K1
+[01;31m[K90[m[K12
+]0;lab2@lab2-AcerPower-Series: ~/ceccs18c61/cs232/2001lab2@lab2-AcerPower-Series:~/ceccs18c61/cs232/2001$ grep '90' abc.txt[C[C[1@-[1@c[C[1@ [C[1P[1P[1@d[C[C[1Pbc.txt[1Pc.txt[Cb.txta.txt[C[C[C[C
+2
+]0;lab2@lab2-AcerPower-Series: ~/ceccs18c61/cs232/2001lab2@lab2-AcerPower-Series:~/ceccs18c61/cs232/2001$ paste abc.txt cba.txt
+1234	anandhu
+2345	vivek
+3456	aravind
+4567	sreejith
+5678	shijin
+6789	jibin
+7890	sarath
+8901	akhil
+9012	
+0123	
+]0;lab2@lab2-AcerPower-Series: ~/ceccs18c61/cs232/2001lab2@lab2-AcerPower-Series:~/ceccs18c61/cs232/2001$ history
+    1  ls
+    2  ls-l
+    3  ls -l
+    4  ls -lt
+    5  ls -ltr
+    6  ls ab* -d
+    7  alias
+    8  alias ll='ls al'
+    9  unalias ll
+   10  ~ /.bash_aliases
+   11  ll>abc.txt
+   12  field seperator: TAB
+   13  sort -n fn
+   14  sort -nk7 fn
+   15  ll > abc.txt
+   16  ll > abc.tct
+   17  is
+   18  ls
+   19  ls -l
+   20  ll > abc.txt
+   21  cat > abc.txt
+   22  cat abc.txt
+   23  sort -n abc.txt
+   24  sort -nk7 abc.txt
+   25  sort -rnk7 abc.txt
+   26  sort -t'$\t' -k7 abc.txt
+   27  sort -t'$\t'-k7 abc.txt
+   28  sort -t'$\\t' -k7 abc.txt
+   29  cut -f3 abc.txt
+   30  cut -f-3
+   31  cut -f3 abc.txt
+   32  cut -b 1 abc.txt
+   33  cut -b 0,1 abc.txt
+   34  cut -b 01 abc.txt
+   35  cut -b 1 abc.txt
+   36  cut -b 0 abc.txt
+   37  cut -b 2 abc.txt
+   38  cat > abc.txt
+   39  cut -c 1 abc.txt
+   40  cat  abc.txt
+   41  cut -c 2 abc.txt
+   42  cut -c 3 abc.txt
+   43  cut -c 4 abc.txt
+   44  cut -c 5 abc.txt
+   45  cut -c 1,2 abc.txt
+   46  cut -c 1,4 abc.txt
+   47  cut -c 4,4 abc.txt
+   48  cut -c 4,3 abc.txt
+   49  cut -c 3,4 abc.txt
+   50  ll > cba.txt
+   51  cat > cba.txt
+   52  sort -n cba.txt
+   53  sort -nk7 cba.txt
+   54  sort -rnk7 cba.txt
+   55  cut -c 1,4 cba.txt
+   56  cut -c 1 cba.txt
+   57  cat  cba.txt
+   58  grep 'a' bca.txt
+   59  grep 'a' cba.txt
+   60  grep '1' abc.txt
+   61  grep '12' abc.txt
+   62  grep '19' abc.txt
+   63  grep '91' abc.txt
+   64  grep '9','1' abc.txt
+   65  grep '9,1' abc.txt
+   66  grep '90' abc.txt
+   67  grep -c 'd' cba.txt
+   68  paste abc.txt cba.txt
+   69  history
+]0;lab2@lab2-AcerPower-Series: ~/ceccs18c61/cs232/2001lab2@lab2-AcerPower-Series:~/ceccs18c61/cs232/2001$ exit
+exit
+There are stopped jobs.
+]0;lab2@lab2-AcerPower-Series: ~/ceccs18c61/cs232/2001lab2@lab2-AcerPower-Series:~/ceccs18c61/cs232/2001$ cd..
+cd..: command not found
+]0;lab2@lab2-AcerPower-Series: ~/ceccs18c61/cs232/2001lab2@lab2-AcerPower-Series:~/ceccs18c61/cs232/2001$ cd.. ..[C[C
+]0;lab2@lab2-AcerPower-Series: ~/ceccs18c61/cs232lab2@lab2-AcerPower-Series:~/ceccs18c61/cs232$ sttp cs18c61@192.168.30
+No command 'sttp' found, did you mean:
+ Command 'stop' from package 'upstart' (main)
+ Command 'step' from package 'step' (main)
+ Command 'stty' from package 'coreutils' (main)
+ Command 'smtp' from package 'apcupsd' (universe)
+ Command 'stap' from package 'systemtap' (universe)
+ Command 'sntp' from package 'ntp' (main)
+ Command 

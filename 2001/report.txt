@@ -1,0 +1,57 @@
+CEC CS 18 C61    20/01/2020
+VISHWANATH R ATHREY
+
+--------------------------------
+#1: Familiarisation of linux commands
+---------------------------------
+Command/Shell script/Program name
+
+creating a file
+familiarised the folloing commands:-
+ * sort
+ * cut
+ * grep
+ * paste
+---------------------------------
+
+Input:
+
+files
+ > of numbers
+ > of strings
+---------------
+
+--------------------------------
+Output: or Input & Output (whichever is applicable)
+
+Sort:-
+ This comand sorts the file in the specified format.
+
+Cut:-
+ This comand cuts  specified bit or bits and give the output(only those which had been cut).
+
+Grep:-
+ This comand serches the specified or asked bit in the specified file.
+
+Paste:-
+ This comand pastes multiple  files one by one.
+ 
+--------------------------------
+Remarks if any:
+
+
+
+
+
+-------------------------------------
+-------------------------------------
+#2:
+
+#3:
+
+#4:
+
+#5:
+
+
+
