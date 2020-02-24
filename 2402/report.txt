@@ -1,6 +1,8 @@
 CEC CS 18 C61
 VISHWANATH R ATHREY
 
+
+mac address:  HWaddr 38:d5:47:b8:d1:a8  
 --------------------------------
 #1: Aim/task: TASK 7 Setting up http and ftp server
 ---------------------------------
