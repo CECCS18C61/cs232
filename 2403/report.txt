@@ -1,0 +1,65 @@
+CEC CS 18 C61
+Vishwanath R Athrey
+
+--------------------------------
+#1: Aim/task: Task 8 :- 4.Kernel compilation
+---------------------------------
+Command/Shell script/Program name
+
+---------------------------------
+ 1. Get the latest Linux kernel source code
+	$ wget https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.4.1.tar.xz
+
+ 2. Extract tar.xz file
+	$ unxz -v linux-5.4.1.tar.xz
+
+ 3. Verify Linux kernel tartball with pgp
+    A. Grab the PGP signature for linux-5.4.1.tar:
+	$ wget https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.4.1.tar.sign
+    B. To verify it:
+	$ gpg --verify linux-5.4.1.tar.sign 
+    C. Grab the public key from the PGP keyserver in order to verify the signature
+ 	$ gpg --recv-keys  647F28654894E3BD457199BE38DBBDC86092693E
+    D. Now verify gpg key again with the gpg command:
+	$ gpg --verify linux-5.4.1.tar.sign
+ 
+ 4. Extract the tartball
+	$ tar xvf linux-5.4.1.tar
+
+ 5. Configure the Linux kernel features and modules
+	$ cd linux-5.4.1
+	$ cp -v /boot/config-$(uname -r) .config
+
+ 6. Install the required compilers and other tools
+	$ sudo apt-get install build-essential libncurses-dev bison flex libssl-dev libelf-dev
+
+ 7. Compile the Kernel 
+	$ make -j $(nproc)
+
+
+---------------
+
+--------------------------------
+Output: or Input & Output (whichever is applicable)
+
+- Compiled Kernel at/linux5.4.1
+  Screenshot of the copiled file is attached - kernel screenshot.png
+-------------------
+Remarks if any:
+
+
+
+
+
+-------------------------------------
+-------------------------------------
+#2:
+
+#3:
+
+#4:
+
+#5:
+
+
+
