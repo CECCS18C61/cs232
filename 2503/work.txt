@@ -1,0 +1,689 @@
+Script started on 2020-03-25 09:26:53+0530
+]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ sudo apt-get update
+[sudo] password for vishwanath: 
+0% [Working]0% [Connecting to in.archive.ubuntu.com (103.97.84.254)] [Connecting to securit                                                                               Get:1 http://security.ubuntu.com/ubuntu bionic-security InRelease [88.7 kB]
+                                                                               0% [Waiting for headers] [1 InRelease 7,418 B/88.7 kB 8%]                                                         Hit:2 http://in.archive.ubuntu.com/ubuntu bionic InRelease
+                                                         0% [1 InRelease 12.6 kB/88.7 kB 14%]0% [2 InRelease gpgv 242 kB] [Waiting for headers] [1 InRelease 12.6 kB/88.7 kB                                                                               Get:3 http://in.archive.ubuntu.com/ubuntu bionic-updates InRelease [88.7 kB]
+0% [2 InRelease gpgv 242 kB] [3 InRelease 1,142 B/88.7 kB 1%] [1 InRelease 29.3                                                                               0% [3 InRelease 42.0 kB/88.7 kB 47%] [1 InRelease 71.8 kB/88.7 kB 81%]                                                                      0% [3 InRelease 42.0 kB/88.7 kB 47%]0% [1 InRelease gpgv 88.7 kB] [3 InRelease 42.0 kB/88.7 kB 47%]                                                               0% [3 InRelease 42.0 kB/88.7 kB 47%]                                    0% [Waiting for headers]0% [3 InRelease gpgv 88.7 kB] [Waiting for headers] [Waiting for headers]                                                                         0% [Waiting for headers] [Waiting for headers]                                              Get:4 http://security.ubuntu.com/ubuntu bionic-security/main i386 Packages [450 kB]
+0% [Waiting for headers] [4 Packages 1,079 B/450 kB 0%]                                                       Get:5 http://in.archive.ubuntu.com/ubuntu bionic-backports InRelease [74.6 kB]
+0% [5 InRelease 1,142 B/74.6 kB 2%] [4 Packages 66.8 kB/450 kB 15%]                                                                   0% [4 Packages 71.9 kB/450 kB 16%]0% [5 InRelease gpgv 74.6 kB] [4 Packages 71.9 kB/450 kB 16%]                                                             21% [Waiting for headers] [4 Packages 144 kB/450 kB 32%]                                                        Get:6 http://in.archive.ubuntu.com/ubuntu bionic-updates/main amd64 Packages [892 kB]
+21% [6 Packages 1,129 B/892 kB 0%] [4 Packages 239 kB/450 kB 53%]22% [6 Packages 84.9 kB/892 kB 10%] [4 Packages 264 kB/450 kB 59%]                                                                  24% [6 Packages 86.3 kB/892 kB 10%]24% [4 Packages store 0 B] [6 Packages 86.3 kB/892 kB 10%] [Waiting for headers                                                                               25% [6 Packages 106 kB/892 kB 12%] [Waiting for headers]                                                        Get:7 http://security.ubuntu.com/ubuntu bionic-security/main amd64 Packages [670 kB]
+28% [6 Packages 425 kB/892 kB 48%] [7 Packages 1,067 B/670 kB 0%]30% [6 Packages 465 kB/892 kB 52%] [7 Packages 194 kB/670 kB 29%]35% [6 Packages 580 kB/892 kB 65%] [7 Packages 620 kB/670 kB 93%]                                                                 35% [6 Packages 591 kB/892 kB 66%] [Waiting for headers]                                                        Get:8 http://security.ubuntu.com/ubuntu bionic-security/main Translation-en [216 kB]
+35% [6 Packages 591 kB/892 kB 66%] [8 Translation-en 762 B/216 kB 0%]35% [7 Packages store 0 B] [6 Packages 591 kB/892 kB 66%] [8 Translation-en 762                                                                               37% [6 Packages 704 kB/892 kB 79%] [8 Translation-en 82.6 kB/216 kB 38%]                                                                        38% [6 Packages 728 kB/892 kB 82%] [8 Translation-en 191 kB/216 kB 88%]                                                                       39% [6 Packages 728 kB/892 kB 82%] [Waiting for headers]                                                        Get:9 http://security.ubuntu.com/ubuntu bionic-security/main amd64 DEP-11 Metadata [38.5 kB]
+39% [6 Packages 728 kB/892 kB 82%] [9 Components-amd64 3,019 B/38.5 kB 8%]39% [8 Translation-en store 0 B] [6 Packages 728 kB/892 kB 82%] [9 Components-a                                                                               39% [8 Translation-en store 0 B] [6 Packages 728 kB/892 kB 82%]                                                               Get:10 http://security.ubuntu.com/ubuntu bionic-security/main DEP-11 64x64 Icons [41.5 kB]
+39% [8 Translation-en store 0 B] [6 Packages 728 kB/892 kB 82%] [10 icons-64x64                                                                               39% [8 Translation-en store 0 B] [6 Packages 728 kB/892 kB 82%]                                                               Get:11 http://security.ubuntu.com/ubuntu bionic-security/restricted amd64 Packages [27.1 kB]
+39% [8 Translation-en store 0 B] [6 Packages 728 kB/892 kB 82%] [11 Packages 2,                                                                               40% [8 Translation-en store 0 B] [6 Packages 729 kB/892 kB 82%]                                                               Get:12 http://security.ubuntu.com/ubuntu bionic-security/restricted Translation-en [7,260 B]
+40% [8 Translation-en store 0 B] [6 Packages 729 kB/892 kB 82%] [12 Translation                                                                               40% [8 Translation-en store 0 B] [6 Packages 731 kB/892 kB 82%]                                                               Get:13 http://security.ubuntu.com/ubuntu bionic-security/universe i386 Packages [618 kB]
+40% [8 Translation-en store 0 B] [6 Packages 731 kB/892 kB 82%] [13 Packages 1,                                                                               40% [6 Packages 732 kB/892 kB 82%] [13 Packages 47.5 kB/618 kB 8%]40% [9 Components-amd64 store 0 B] [6 Packages 732 kB/892 kB 82%] [13 Packages                                                                                41% [6 Packages 732 kB/892 kB 82%] [13 Packages 68.2 kB/618 kB 11%]41% [10 icons-64x64 store 0 B] [6 Packages 732 kB/892 kB 82%] [13 Packages 68.2                                                                               41% [6 Packages 732 kB/892 kB 82%] [13 Packages 70.7 kB/618 kB 11%]41% [11 Packages store 0 B] [6 Packages 732 kB/892 kB 82%] [13 Packages 70.7 kB                                                                               41% [6 Packages 732 kB/892 kB 82%] [13 Packages 78.5 kB/618 kB 13%]41% [12 Translation-en store 0 B] [6 Packages 732 kB/892 kB 82%] [13 Packages 7                                                                               41% [6 Packages 732 kB/892 kB 82%] [13 Packages 81.0 kB/618 kB 13%]47% [6 Packages 774 kB/892 kB 87%] [Waiting for headers]           488 kB/s 11s                                                                               Get:14 http://security.ubuntu.com/ubuntu bionic-security/universe amd64 Packages [652 kB]
+47% [6 Packages 774 kB/892 kB 87%] [14 Packages 268 B/652 kB 0%]   488 kB/s 11s47% [13 Packages store 0 B] [6 Packages 774 kB/892 kB 87%] [14 Packages 268 B/6                                                                               47% [6 Packages 779 kB/892 kB 87%] [14 Packages 56.9 kB/652 kB 9%]49% [6 Packages 779 kB/892 kB 87%] [14 Packages 204 kB/652 kB 31%]54% [6 Packages 856 kB/892 kB 96%] [Waiting for headers]            488 kB/s 9s                                                                               Get:15 http://security.ubuntu.com/ubuntu bionic-security/universe amd64 DEP-11 Metadata [42.1 kB]
+                                                                               54% [6 Packages 856 kB/892 kB 96%] [15 Components-amd64 657 B/42.1 kB 2%]54% [14 Packages store 0 B] [6 Packages 856 kB/892 kB 96%] [15 Components-amd6454% [14 Packages store 0 B] [6 Packages 856 kB/892 kB 96%] [Waiting for headers                                                                               Get:16 http://security.ubuntu.com/ubuntu bionic-security/universe DEP-11 48x48 Icons [16.4 kB]
+54% [14 Packages store 0 B] [6 Packages 856 kB/892 kB 96%] [16 icons-48x48 2,1754% [14 Packages store 0 B] [6 Packages 857 kB/892 kB 96%]          488 kB/s 9s                                                                               Get:17 http://security.ubuntu.com/ubuntu bionic-security/universe DEP-11 64x64 Icons [111 kB]
+54% [14 Packages store 0 B] [6 Packages 857 kB/892 kB 96%] [17 icons-64x64 1,00                                                                               55% [6 Packages 886 kB/892 kB 99%] [17 icons-64x64 103 kB/111 kB 92%]55% [15 Components-amd64 store 0 B] [6 Packages 886 kB/892 kB 99%] [17 icons-64                                                                               56% [6 Packages 886 kB/892 kB 99%] [17 icons-64x64 103 kB/111 kB 92%]56% [16 icons-48x48 store 0 B] [6 Packages 886 kB/892 kB 99%] [17 icons-64x64 1                                                                               56% [6 Packages 886 kB/892 kB 99%] [17 icons-64x64 103 kB/111 kB 92%]56% [Waiting for headers] [17 icons-64x64 103 kB/111 kB 92%]        488 kB/s 9s                                                                               Get:18 http://in.archive.ubuntu.com/ubuntu bionic-updates/main i386 Packages [659 kB]
+                                                                               56% [18 Packages 586 B/659 kB 0%] [17 icons-64x64 103 kB/111 kB 92%]56% [6 Packages store 0 B] [18 Packages 586 B/659 kB 0%] [17 icons-64x64 103 kB                                                                               56% [18 Packages 16.1 kB/659 kB 2%] [17 icons-64x64 103 kB/111 kB 92%]57% [18 Packages 74.8 kB/659 kB 11%]                                488 kB/s 9s                                                                               Get:19 http://security.ubuntu.com/ubuntu bionic-security/multiverse amd64 DEP-11 Metadata [2,464 B]
+                                                                               57% [18 Packages 74.8 kB/659 kB 11%] [19 Components-amd64 338 B/2,464 B 14%]57% [17 icons-64x64 store 0 B] [18 Packages 74.8 kB/659 kB 11%] [19 Components-                                                                               57% [18 Packages 74.8 kB/659 kB 11%] [19 Components-amd64 338 B/2,464 B 14%]57% [18 Packages 106 kB/659 kB 16%]                                 488 kB/s 9s                                                                               57% [19 Components-amd64 store 0 B] [18 Packages 106 kB/659 kB 16%]57% [18 Packages 106 kB/659 kB 16%]                                 488 kB/s 9s58% [18 Packages 189 kB/659 kB 29%]                                 488 kB/s 8s59% [18 Packages 294 kB/659 kB 45%]                                 488 kB/s 8s60% [18 Packages 385 kB/659 kB 58%]                                 488 kB/s 8s61% [18 Packages 477 kB/659 kB 72%]                                 488 kB/s 8s61% [18 Packages 549 kB/659 kB 83%]                                 488 kB/s 8s62% [18 Packages 584 kB/659 kB 89%]                                 488 kB/s 8s62% [18 Packages 656 kB/659 kB 100%]                                488 kB/s 7s62% [Waiting for headers]                                           488 kB/s 7s                                                                               Get:20 http://in.archive.ubuntu.com/ubuntu bionic-updates/main Translation-en [309 kB]
+62% [20 Translation-en 833 B/309 kB 0%]                             488 kB/s 7s62% [18 Packages store 0 B] [20 Translation-en 833 B/309 kB 0%]     488 kB/s 7s63% [20 Translation-en 54.0 kB/309 kB 18%]                          488 kB/s 7s63% [20 Translation-en 69.5 kB/309 kB 23%]                         267 kB/s 14s64% [20 Translation-en 124 kB/309 kB 40%]                          267 kB/s 14s64% [20 Translation-en 124 kB/309 kB 40%]                          267 kB/s 14s64% [20 Translation-en 217 kB/309 kB 70%]                          267 kB/s 13s65% [20 Translation-en 276 kB/309 kB 90%]                          267 kB/s 13s65% [20 Translation-en 276 kB/309 kB 90%]                          267 kB/s 13s65% [Waiting for headers]                                          267 kB/s 13s                                                                               Get:21 http://in.archive.ubuntu.com/ubuntu bionic-updates/main amd64 DEP-11 Metadata [307 kB]
+65% [21 Components-amd64 1,449 B/307 kB 0%]                        267 kB/s 13s                                                                               65% [20 Translation-en store 0 B] [21 Components-amd64 1,449 B/307 kB 0%]66% [21 Components-amd64 38.1 kB/307 kB 12%]                       267 kB/s 13s66% [21 Components-amd64 71.9 kB/307 kB 23%]                       267 kB/s 13s66% [21 Components-amd64 81.8 kB/307 kB 27%]                       267 kB/s 13s67% [21 Components-amd64 185 kB/307 kB 60%]                        267 kB/s 12s68% [21 Components-amd64 239 kB/307 kB 78%]                        267 kB/s 12s68% [Working]                                                      267 kB/s 12s                                                                               Get:22 http://in.archive.ubuntu.com/ubuntu bionic-updates/main DEP-11 48x48 Icons [73.8 kB]
+68% [22 icons-48x48 18 B/73.8 kB 0%]                               267 kB/s 12s                                                                               68% [21 Components-amd64 store 0 B] [22 icons-48x48 18 B/73.8 kB 0%]69% [22 icons-48x48 53.5 kB/73.8 kB 72%]                           267 kB/s 12s69% [Working]                                                      267 kB/s 11s                                                                               Get:23 http://in.archive.ubuntu.com/ubuntu bionic-updates/main DEP-11 64x64 Icons [140 kB]
+69% [23 icons-64x64 2,964 B/140 kB 2%]                             267 kB/s 11s69% [22 icons-48x48 store 0 B] [23 icons-64x64 2,964 B/140 kB 2%]  267 kB/s 11s69% [23 icons-64x64 7,188 B/140 kB 5%]                             267 kB/s 11s70% [23 icons-64x64 47.9 kB/140 kB 34%]                            111 kB/s 28s70% [Working]                                                      111 kB/s 27s                                                                               Get:24 http://in.archive.ubuntu.com/ubuntu bionic-updates/universe i386 Packages [1,012 kB]
+71% [24 Packages 4,693 B/1,012 kB 0%]                              111 kB/s 27s71% [23 icons-64x64 store 0 B] [24 Packages 6,101 B/1,012 kB 1%]   111 kB/s 27s71% [24 Packages 8,917 B/1,012 kB 1%]                              111 kB/s 27s71% [24 Packages 58.2 kB/1,012 kB 6%]                              111 kB/s 26s72% [24 Packages 112 kB/1,012 kB 11%]                              111 kB/s 26s72% [24 Packages 169 kB/1,012 kB 17%]                              111 kB/s 25s73% [24 Packages 231 kB/1,012 kB 23%]                              111 kB/s 25s74% [24 Packages 360 kB/1,012 kB 36%]                              111 kB/s 24s75% [24 Packages 424 kB/1,012 kB 42%]                              111 kB/s 23s75% [24 Packages 489 kB/1,012 kB 48%]                              111 kB/s 23s76% [24 Packages 554 kB/1,012 kB 55%]                              111 kB/s 22s77% [24 Packages 683 kB/1,012 kB 67%]                              111 kB/s 21s78% [24 Packages 750 kB/1,012 kB 74%]                              111 kB/s 20s78% [24 Packages 817 kB/1,012 kB 81%]                              111 kB/s 20s79% [24 Packages 888 kB/1,012 kB 88%]                              155 kB/s 13s80% [24 Packages 962 kB/1,012 kB 95%]                              155 kB/s 13s80% [Waiting for headers]                                          155 kB/s 13s                                                                               Get:25 http://in.archive.ubuntu.com/ubuntu bionic-updates/universe amd64 Packages [1,060 kB]
+80% [25 Packages 2,943 B/1,060 kB 0%]                              155 kB/s 13s80% [24 Packages store 0 B] [25 Packages 2,943 B/1,060 kB 0%]      155 kB/s 13s80% [25 Packages 29.7 kB/1,060 kB 3%]                              155 kB/s 12s81% [25 Packages 118 kB/1,060 kB 11%]                              155 kB/s 12s82% [25 Packages 217 kB/1,060 kB 20%]                              155 kB/s 11s84% [25 Packages 435 kB/1,060 kB 41%]                              155 kB/s 10s85% [25 Packages 519 kB/1,060 kB 49%]                               155 kB/s 9s86% [25 Packages 598 kB/1,060 kB 56%]                               155 kB/s 9s87% [25 Packages 710 kB/1,060 kB 67%]                               155 kB/s 8s88% [25 Packages 856 kB/1,060 kB 81%]                               155 kB/s 7s89% [25 Packages 936 kB/1,060 kB 88%]                               155 kB/s 7s90% [25 Packages 1,019 kB/1,060 kB 96%]                             155 kB/s 6s90% [Waiting for headers]                                           155 kB/s 6s                                                                               Get:26 http://in.archive.ubuntu.com/ubuntu bionic-updates/universe amd64 DEP-11 Metadata [273 kB]
+90% [26 Components-amd64 1,257 B/273 kB 0%]                         155 kB/s 6s                                                                               90% [25 Packages store 0 B] [26 Components-amd64 1,257 B/273 kB 0%]91% [26 Components-amd64 42.9 kB/273 kB 16%]                        155 kB/s 6s91% [26 Components-amd64 129 kB/273 kB 47%]                         214 kB/s 3s92% [26 Components-amd64 215 kB/273 kB 79%]                         214 kB/s 3s93% [Waiting for headers]                                           214 kB/s 3s                                                                               Get:27 http://in.archive.ubuntu.com/ubuntu bionic-updates/universe DEP-11 48x48 Icons [210 kB]
+93% [27 icons-48x48 1,729 B/210 kB 1%]                              214 kB/s 3s                                                                               93% [26 Components-amd64 store 0 B] [27 icons-48x48 1,729 B/210 kB 1%]93% [27 icons-48x48 26.5 kB/210 kB 13%]                             214 kB/s 3s94% [27 icons-48x48 112 kB/210 kB 54%]                              214 kB/s 2s95% [27 icons-48x48 198 kB/210 kB 95%]                              214 kB/s 2s95% [Waiting for headers]                                           214 kB/s 2s                                                                               Get:28 http://in.archive.ubuntu.com/ubuntu bionic-updates/universe DEP-11 64x64 Icons [470 kB]
+95% [28 icons-64x64 2,459 B/470 kB 1%]                              214 kB/s 2s95% [27 icons-48x48 store 0 B] [28 icons-64x64 2,459 B/470 kB 1%]   214 kB/s 2s95% [28 icons-64x64 5,275 B/470 kB 1%]                              214 kB/s 2s96% [28 icons-64x64 163 kB/470 kB 35%]                              214 kB/s 1s97% [28 icons-64x64 187 kB/470 kB 40%]                              214 kB/s 1s97% [28 icons-64x64 280 kB/470 kB 60%]                              214 kB/s 0s98% [28 icons-64x64 366 kB/470 kB 78%]                              214 kB/s 0s99% [28 icons-64x64 409 kB/470 kB 87%]                              214 kB/s 0s99% [Working]                                                       214 kB/s 0s                                                                               Get:29 http://in.archive.ubuntu.com/ubuntu bionic-updates/multiverse amd64 DEP-11 Metadata [2,468 B]
+99% [29 Components-amd64 714 B/2,468 B 29%]                         214 kB/s 0s                                                                               99% [28 icons-64x64 store 0 B] [29 Components-amd64 714 B/2,468 B 29%]99% [28 icons-64x64 store 0 B]                                      214 kB/s 0s                                                                               Get:30 http://in.archive.ubuntu.com/ubuntu bionic-backports/universe amd64 Packages [4,916 B]
+99% [28 icons-64x64 store 0 B] [30 Packages 798 B/4,916 B 16%]      214 kB/s 0s99% [28 icons-64x64 store 0 B]                                      214 kB/s 0s                                                                               Get:31 http://in.archive.ubuntu.com/ubuntu bionic-backports/universe i386 Packages [4,916 B]
+99% [28 icons-64x64 store 0 B] [31 Packages 1,250 B/4,916 B 25%]    214 kB/s 0s99% [31 Packages 1,250 B/4,916 B 25%]                               214 kB/s 0s                                                                               99% [29 Components-amd64 store 0 B] [31 Packages 1,250 B/4,916 B 25%]100% [31 Packages 1,250 B/4,916 B 25%]                              214 kB/s 0s100% [30 Packages store 0 B] [31 Packages 1,250 B/4,916 B 25%]      214 kB/s 0s100% [31 Packages 1,250 B/4,916 B 25%]                              214 kB/s 0s100% [Working]                                                      214 kB/s 0s                                                                               Get:32 http://in.archive.ubuntu.com/ubuntu bionic-backports/universe amd64 DEP-11 Metadata [7,980 B]
+100% [32 Components-amd64 1,408 B/7,980 B 18%]                      214 kB/s 0s                                                                               100% [31 Packages store 0 B] [32 Components-amd64 1,408 B/7,980 B 18%]100% [32 Components-amd64 1,408 B/7,980 B 18%]                      214 kB/s 0s100% [Working]                                                      214 kB/s 0s100% [32 Components-amd64 store 0 B]                                214 kB/s 0s100% [Working]                                                      214 kB/s 0s                                                                               Fetched 8,571 kB in 36s (237 kB/s)
+Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 3%Reading package lists... 3%Reading package lists... 5%Reading package lists... 5%Reading package lists... 7%Reading package lists... 7%Reading package lists... 7%Reading package lists... 7%Reading package lists... 7%Reading package lists... 7%Reading package lists... 7%Reading package lists... 7%Reading package lists... 32%Reading package lists... 32%Reading package lists... 44%Reading package lists... 56%Reading package lists... 56%Reading package lists... 69%Reading package lists... 69%Reading package lists... 69%Reading package lists... 69%Reading package lists... 70%Reading package lists... 70%Reading package lists... 70%Reading package lists... 70%Reading package lists... 73%Reading package lists... 73%Reading package lists... 75%Reading package lists... 75%Reading package lists... 77%Reading package lists... 77%Reading package lists... 78%Reading package lists... 78%Reading package lists... 78%Reading package lists... 78%Reading package lists... 78%Reading package lists... 78%Reading package lists... 82%Reading package lists... 82%Reading package lists... 85%Reading package lists... 85%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 89%Reading package lists... 89%Reading package lists... 91%Reading package lists... 91%Reading package lists... 93%Reading package lists... 93%Reading package lists... 93%Reading package lists... 93%Reading package lists... 93%Reading package lists... 93%Reading package lists... 93%Reading package lists... 93%Reading package lists... 95%Reading package lists... 95%Reading package lists... 98%Reading package lists... 98%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
+]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ sudo apt-get install apache2
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 1%Reading state information... Done
+The following additional packages will be installed:
+  apache2-bin apache2-data apache2-utils libapr1 libaprutil1
+  libaprutil1-dbd-sqlite3 libaprutil1-ldap liblua5.2-0
+Suggested packages:
+  apache2-doc apache2-suexec-pristine | apache2-suexec-custom
+The following NEW packages will be installed:
+  apache2 apache2-bin apache2-data apache2-utils libapr1 libaprutil1
+  libaprutil1-dbd-sqlite3 libaprutil1-ldap liblua5.2-0
+0 upgraded, 9 newly installed, 0 to remove and 282 not upgraded.
+Need to get 1,712 kB of archives.
+After this operation, 6,921 kB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+0% [Working]0% [Waiting for headers]                        Get:1 http://in.archive.ubuntu.com/ubuntu bionic/main amd64 libapr1 amd64 1.6.3-2 [90.9 kB]
+0% [1 libapr1 8,182 B/90.9 kB 9%]2% [1 libapr1 42.0 kB/90.9 kB 46%]4% [1 libapr1 85.6 kB/90.9 kB 94%]                                  6% [Working]            Get:2 http://in.archive.ubuntu.com/ubuntu bionic/main amd64 libaprutil1 amd64 1.6.1-2 [84.4 kB]
+7% [2 libaprutil1 3,958 B/84.4 kB 5%]9% [2 libaprutil1 44.8 kB/84.4 kB 53%]                                      13% [Working]             Get:3 http://in.archive.ubuntu.com/ubuntu bionic/main amd64 libaprutil1-dbd-sqlite3 amd64 1.6.1-2 [10.6 kB]
+13% [3 libaprutil1-dbd-sqlite3 10.6 kB/10.6 kB 100%]                                                    15% [Working]             Get:4 http://in.archive.ubuntu.com/ubuntu bionic/main amd64 libaprutil1-ldap amd64 1.6.1-2 [8,764 B]
+16% [4 libaprutil1-ldap 8,764 B/8,764 B 100%]                                             18% [Waiting for headers]                         Get:5 http://in.archive.ubuntu.com/ubuntu bionic/main amd64 liblua5.2-0 amd64 5.2.4-1.1build1 [108 kB]
+19% [5 liblua5.2-0 16.2 kB/108 kB 15%]20% [5 liblua5.2-0 53.6 kB/108 kB 50%]22% [5 liblua5.2-0 93.1 kB/108 kB 86%]                                      25% [Waiting for headers]                         Get:6 http://in.archive.ubuntu.com/ubuntu bionic-updates/main amd64 apache2-bin amd64 2.4.29-1ubuntu4.13 [1,070 kB]
+26% [6 apache2-bin 7,159 B/1,070 kB 1%]29% [6 apache2-bin 72.7 kB/1,070 kB 7%]31% [6 apache2-bin 119 kB/1,070 kB 11%]33% [6 apache2-bin 167 kB/1,070 kB 16%]38% [6 apache2-bin 263 kB/1,070 kB 25%]                           87.2 kB/s 13s40% [6 apache2-bin 311 kB/1,070 kB 29%]                           87.2 kB/s 12s42% [6 apache2-bin 359 kB/1,070 kB 33%]                           87.2 kB/s 12s44% [6 apache2-bin 408 kB/1,070 kB 38%]                           87.2 kB/s 11s49% [6 apache2-bin 502 kB/1,070 kB 47%]                           87.2 kB/s 10s52% [6 apache2-bin 566 kB/1,070 kB 53%]                            87.2 kB/s 9s54% [6 apache2-bin 625 kB/1,070 kB 58%]                            87.2 kB/s 8s57% [6 apache2-bin 689 kB/1,070 kB 64%]                            87.2 kB/s 8s65% [6 apache2-bin 843 kB/1,070 kB 79%]                            87.2 kB/s 6s69% [6 apache2-bin 936 kB/1,070 kB 87%]                            87.2 kB/s 5s74% [6 apache2-bin 1,040 kB/1,070 kB 97%]                          87.2 kB/s 4s78% [Waiting for headers]                                          87.2 kB/s 3s                                                                               Get:7 http://in.archive.ubuntu.com/ubuntu bionic-updates/main amd64 apache2-utils amd64 2.4.29-1ubuntu4.13 [83.8 kB]
+81% [7 apache2-utils 65.5 kB/83.8 kB 78%]                          87.2 kB/s 3s84% [Waiting for headers]                                          87.2 kB/s 2s                                                                               Get:8 http://in.archive.ubuntu.com/ubuntu bionic-updates/main amd64 apache2-data all 2.4.29-1ubuntu4.13 [160 kB]
+84% [8 apache2-data 13.0 kB/160 kB 8%]                             87.2 kB/s 2s93% [Waiting for headers]                                          87.2 kB/s 1s                                                                               Get:9 http://in.archive.ubuntu.com/ubuntu bionic-updates/main amd64 apache2 amd64 2.4.29-1ubuntu4.13 [95.1 kB]
+94% [9 apache2 14.8 kB/95.1 kB 16%]                                87.2 kB/s 0s97% [9 apache2 75.6 kB/95.1 kB 80%]                                 175 kB/s 0s100% [Working]                                                      175 kB/s 0s                                                                               Fetched 1,712 kB in 13s (130 kB/s)
+Selecting previously unselected package libapr1:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 167371 files and directories currently installed.)
+Preparing to unpack .../0-libapr1_1.6.3-2_amd64.deb ...
+Unpacking libapr1:amd64 (1.6.3-2) ...
+Selecting previously unselected package libaprutil1:amd64.
+Preparing to unpack .../1-libaprutil1_1.6.1-2_amd64.deb ...
+Unpacking libaprutil1:amd64 (1.6.1-2) ...
+Selecting previously unselected package libaprutil1-dbd-sqlite3:amd64.
+Preparing to unpack .../2-libaprutil1-dbd-sqlite3_1.6.1-2_amd64.deb ...
+Unpacking libaprutil1-dbd-sqlite3:amd64 (1.6.1-2) ...
+Selecting previously unselected package libaprutil1-ldap:amd64.
+Preparing to unpack .../3-libaprutil1-ldap_1.6.1-2_amd64.deb ...
+Unpacking libaprutil1-ldap:amd64 (1.6.1-2) ...
+Selecting previously unselected package liblua5.2-0:amd64.
+Preparing to unpack .../4-liblua5.2-0_5.2.4-1.1build1_amd64.deb ...
+Unpacking liblua5.2-0:amd64 (5.2.4-1.1build1) ...
+Selecting previously unselected package apache2-bin.
+Preparing to unpack .../5-apache2-bin_2.4.29-1ubuntu4.13_amd64.deb ...
+Unpacking apache2-bin (2.4.29-1ubuntu4.13) ...
+Selecting previously unselected package apache2-utils.
+Preparing to unpack .../6-apache2-utils_2.4.29-1ubuntu4.13_amd64.deb ...
+Unpacking apache2-utils (2.4.29-1ubuntu4.13) ...
+Selecting previously unselected package apache2-data.
+Preparing to unpack .../7-apache2-data_2.4.29-1ubuntu4.13_all.deb ...
+Unpacking apache2-data (2.4.29-1ubuntu4.13) ...
+Selecting previously unselected package apache2.
+Preparing to unpack .../8-apache2_2.4.29-1ubuntu4.13_amd64.deb ...
+Unpacking apache2 (2.4.29-1ubuntu4.13) ...
+Setting up libapr1:amd64 (1.6.3-2) ...
+Processing triggers for ufw (0.35-5) ...
+Processing triggers for ureadahead (0.100.0-20) ...
+ureadahead will be reprofiled on next reboot
+Setting up apache2-data (2.4.29-1ubuntu4.13) ...
+Processing triggers for libc-bin (2.27-3ubuntu1) ...
+Setting up libaprutil1:amd64 (1.6.1-2) ...
+Processing triggers for systemd (237-3ubuntu10.38) ...
+Processing triggers for man-db (2.8.3-2ubuntu0.1) ...
+Setting up liblua5.2-0:amd64 (5.2.4-1.1build1) ...
+Setting up libaprutil1-ldap:amd64 (1.6.1-2) ...
+Setting up libaprutil1-dbd-sqlite3:amd64 (1.6.1-2) ...
+Setting up apache2-utils (2.4.29-1ubuntu4.13) ...
+Setting up apache2-bin (2.4.29-1ubuntu4.13) ...
+Setting up apache2 (2.4.29-1ubuntu4.13) ...
+Enabling module mpm_event.
+Enabling module authz_core.
+Enabling module authz_host.
+Enabling module authn_core.
+Enabling module auth_basic.
+Enabling module access_compat.
+Enabling module authn_file.
+Enabling module authz_user.
+Enabling module alias.
+Enabling module dir.
+Enabling module autoindex.
+Enabling module env.
+Enabling module mime.
+Enabling module negotiation.
+Enabling module setenvif.
+Enabling module filter.
+Enabling module deflate.
+Enabling module status.
+Enabling module reqtimeout.
+Enabling conf charset.
+Enabling conf localized-error-pages.
+Enabling conf other-vhosts-access-log.
+Enabling conf security.
+Enabling conf serve-cgi-bin.
+Enabling site 000-default.
+Created symlink /etc/systemd/system/multi-user.target.wants/apache2.service → /lib/systemd/system/apache2.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/apache-htcacheclean.service → /lib/systemd/system/apache-htcacheclean.service.
+Processing triggers for libc-bin (2.27-3ubuntu1) ...
+Processing triggers for systemd (237-3ubuntu10.38) ...
+Processing triggers for ureadahead (0.100.0-20) ...
+Processing triggers for ufw (0.35-5) ...
+]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ sudo service apache2 status
+[?1h=[0;1;32m●[0m apache2.service - The Apache HTTP Server[m
+   Loaded: loaded (/lib/systemd/system/apache2.service; enabled; vendor preset: [m
+  Drop-In: /lib/systemd/system/apache2.service.d[m
+           └─apache2-systemd.conf[m
+   Active: [0;1;32mactive (running)[0m since Wed 2020-03-25 09:31:53 IST; 4min 26s ago[m
+ Main PID: 5455 (apache2)[m
+    Tasks: 55 (limit: 4915)[m
+   CGroup: /system.slice/apache2.service[m
+           ├─5455 /usr/sbin/apache2 -k start[m
+           ├─5456 /usr/sbin/apache2 -k start[m
+           └─5457 /usr/sbin/apache2 -k start[m
+[m
+Mar 25 09:31:53 vishwanath-HP-348-G4 systemd[1]: Starting The Apache HTTP Server[m
+Mar 25 09:31:53 vishwanath-HP-348-G4 apachectl[5444]: AH00558: apache2: Could no[m
+Mar 25 09:31:53 vishwanath-HP-348-G4 systemd[1]: Started The Apache HTTP Server.[m
+[7mlines 1-15/15 (END)[27m[K[K[K[7mlines 1-15/15 (END)[27m[K[K...skipping...
+[0;1;32m●[0m apache2.service - The Apache HTTP Server[m
+   Loaded: loaded (/lib/systemd/system/apache2.service; enabled; vendor preset: [m
+  Drop-In: /lib/systemd/system/apache2.service.d[m
+           └─apache2-systemd.conf[m
+   Active: [0;1;32mactive (running)[0m since Wed 2020-03-25 09:31:53 IST; 4min 26s ago[m
+ Main PID: 5455 (apache2)[m
+    Tasks: 55 (limit: 4915)[m
+   CGroup: /system.slice/apache2.service[m
+           ├─5455 /usr/sbin/apache2 -k start[m
+           ├─5456 /usr/sbin/apache2 -k start[m
+           └─5457 /usr/sbin/apache2 -k start[m
+[m
+Mar 25 09:31:53 vishwanath-HP-348-G4 systemd[1]: Starting The Apache HTTP Server[m
+Mar 25 09:31:53 vishwanath-HP-348-G4 apachectl[5444]: AH00558: apache2: Could no[m
+Mar 25 09:31:53 vishwanath-HP-348-G4 systemd[1]: Started The Apache HTTP Server.[m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7mlines 1-15/15 (END)[27m[K[K[K[7mlines 1-15/15 (END)[27m[K[K[K[7mlines 1-15/15 (END)[27m[K[K[K[7mlines 1-15/15 (END)[27m[K[K[K[7mlines 1-15/15 (END)[27m[K[K[K[7mlines 1-15/15 (END)[27m[K[K[?1l>
+[1]+  Stopped                 sudo service apache2 status
+]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ sudo ufw app list
+Available applications:
+  Apache
+  Apache Full
+  Apache Secure
+  CUPS
+]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ sudo ufw app info “Apache Full”
+ERROR: Invalid profile name
+]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ sudo ufw app info “Apache Full”[K'[C[C[1P[1@'[C[C[C[C[C[C[C[C[C[C[C[C
+Profile: Apache Full
+Title: Web Server (HTTP,HTTPS)
+Description: Apache v2 is the next generation of the omnipresent Apache web
+server.
+
+Ports:
+  80,443/tcp
+]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ sudo apt-get install mysql-server
+[sudo] password for vishwanath: 
+Sorry, try again.
+[sudo] password for vishwanath: 
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 1%Reading state information... Done
+The following additional packages will be installed:
+  libaio1 libevent-core-2.1-6 libhtml-template-perl mysql-client-5.7
+  mysql-client-core-5.7 mysql-common mysql-server-5.7 mysql-server-core-5.7
+Suggested packages:
+  libipc-sharedcache-perl mailx tinyca
+The following NEW packages will be installed:
+  libaio1 libevent-core-2.1-6 libhtml-template-perl mysql-client-5.7
+  mysql-client-core-5.7 mysql-common mysql-server mysql-server-5.7
+  mysql-server-core-5.7
+0 upgraded, 9 newly installed, 0 to remove and 282 not upgraded.
+Need to get 19.1 MB of archives.
+After this operation, 155 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+0% [Working]0% [Waiting for headers]                        Get:1 http://in.archive.ubuntu.com/ubuntu bionic/main amd64 mysql-common all 5.8+1.0.4 [7,308 B]
+0% [1 mysql-common 7,308 B/7,308 B 100%]                                        2% [Working]            Get:2 http://in.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libaio1 amd64 0.3.110-5ubuntu0.1 [6,476 B]
+2% [2 libaio1 2,552 B/6,476 B 39%]                                  5% [Waiting for headers]                        Get:3 http://in.archive.ubuntu.com/ubuntu bionic-updates/main amd64 mysql-client-core-5.7 amd64 5.7.29-0ubuntu0.18.04.1 [6,642 kB]
+5% [3 mysql-client-core-5.7 31 B/6,642 kB 0%]5% [3 mysql-client-core-5.7 60.6 kB/6,642 kB 1%]                                                5% [3 mysql-client-core-5.7 118 kB/6,642 kB 2%]5% [3 mysql-client-core-5.7 179 kB/6,642 kB 3%]6% [3 mysql-client-core-5.7 276 kB/6,642 kB 4%]6% [3 mysql-client-core-5.7 379 kB/6,642 kB 6%]6% [3 mysql-client-core-5.7 452 kB/6,642 kB 7%]7% [3 mysql-client-core-5.7 529 kB/6,642 kB 8%]7% [3 mysql-client-core-5.7 610 kB/6,642 kB 9%]8% [3 mysql-client-core-5.7 784 kB/6,642 kB 12%]8% [3 mysql-client-core-5.7 884 kB/6,642 kB 13%]               143 kB/s 2min 7s9% [3 mysql-client-core-5.7 997 kB/6,642 kB 15%]               143 kB/s 2min 6s9% [3 mysql-client-core-5.7 1,126 kB/6,642 kB 17%]             143 kB/s 2min 5s10% [3 mysql-client-core-5.7 1,302 kB/6,642 kB 20%]            143 kB/s 2min 4s11% [3 mysql-client-core-5.7 1,564 kB/6,642 kB 24%]            143 kB/s 2min 2s12% [3 mysql-client-core-5.7 1,866 kB/6,642 kB 28%]            143 kB/s 2min 0s13% [3 mysql-client-core-5.7 2,120 kB/6,642 kB 32%]           143 kB/s 1min 58s14% [3 mysql-client-core-5.7 2,381 kB/6,642 kB 36%]           143 kB/s 1min 56s16% [3 mysql-client-core-5.7 2,668 kB/6,642 kB 40%]           143 kB/s 1min 54s17% [3 mysql-client-core-5.7 2,929 kB/6,642 kB 44%]           143 kB/s 1min 52s18% [3 mysql-client-core-5.7 3,138 kB/6,642 kB 47%]           143 kB/s 1min 51s18% [3 mysql-client-core-5.7 3,302 kB/6,642 kB 50%]           143 kB/s 1min 50s19% [3 mysql-client-core-5.7 3,469 kB/6,642 kB 52%]                430 kB/s 36s20% [3 mysql-client-core-5.7 3,590 kB/6,642 kB 54%]                430 kB/s 36s20% [3 mysql-client-core-5.7 3,795 kB/6,642 kB 57%]                430 kB/s 35s21% [3 mysql-client-core-5.7 3,927 kB/6,642 kB 59%]                430 kB/s 35s22% [3 mysql-client-core-5.7 4,065 kB/6,642 kB 61%]                430 kB/s 34s22% [3 mysql-client-core-5.7 4,217 kB/6,642 kB 63%]                430 kB/s 34s23% [3 mysql-client-core-5.7 4,306 kB/6,642 kB 65%]                430 kB/s 34s23% [3 mysql-client-core-5.7 4,486 kB/6,642 kB 68%]                430 kB/s 33s24% [3 mysql-client-core-5.7 4,603 kB/6,642 kB 69%]                430 kB/s 33s24% [3 mysql-client-core-5.7 4,731 kB/6,642 kB 71%]                430 kB/s 33s25% [3 mysql-client-core-5.7 4,873 kB/6,642 kB 73%]                430 kB/s 33s25% [3 mysql-client-core-5.7 5,017 kB/6,642 kB 76%]                430 kB/s 32s26% [3 mysql-client-core-5.7 5,169 kB/6,642 kB 78%]                283 kB/s 49s27% [3 mysql-client-core-5.7 5,315 kB/6,642 kB 80%]                283 kB/s 48s27% [3 mysql-client-core-5.7 5,467 kB/6,642 kB 82%]                283 kB/s 48s28% [3 mysql-client-core-5.7 5,617 kB/6,642 kB 85%]                283 kB/s 47s29% [3 mysql-client-core-5.7 5,773 kB/6,642 kB 87%]                283 kB/s 47s29% [3 mysql-client-core-5.7 5,923 kB/6,642 kB 89%]                283 kB/s 46s30% [3 mysql-client-core-5.7 6,078 kB/6,642 kB 92%]                283 kB/s 46s31% [3 mysql-client-core-5.7 6,245 kB/6,642 kB 94%]                283 kB/s 45s31% [3 mysql-client-core-5.7 6,399 kB/6,642 kB 96%]                283 kB/s 44s32% [3 mysql-client-core-5.7 6,570 kB/6,642 kB 99%]                283 kB/s 44s35% [Waiting for headers]                                          283 kB/s 44s                                                                               Get:4 http://in.archive.ubuntu.com/ubuntu bionic-updates/main amd64 mysql-client-5.7 amd64 5.7.29-0ubuntu0.18.04.1 [1,942 kB]
+35% [4 mysql-client-5.7 28.2 kB/1,942 kB 1%]                       283 kB/s 43s35% [4 mysql-client-5.7 184 kB/1,942 kB 9%]                        283 kB/s 43s36% [4 mysql-client-5.7 328 kB/1,942 kB 17%]                       283 kB/s 42s37% [4 mysql-client-5.7 507 kB/1,942 kB 26%]                       306 kB/s 39s37% [4 mysql-client-5.7 662 kB/1,942 kB 34%]                       306 kB/s 38s38% [4 mysql-client-5.7 852 kB/1,942 kB 44%]                       306 kB/s 37s39% [4 mysql-client-5.7 1,009 kB/1,942 kB 52%]                     306 kB/s 37s40% [4 mysql-client-5.7 1,198 kB/1,942 kB 62%]                     306 kB/s 36s40% [4 mysql-client-5.7 1,364 kB/1,942 kB 70%]                     306 kB/s 36s41% [4 mysql-client-5.7 1,546 kB/1,942 kB 80%]                     306 kB/s 35s42% [4 mysql-client-5.7 1,722 kB/1,942 kB 89%]                     306 kB/s 35s42% [4 mysql-client-5.7 1,898 kB/1,942 kB 98%]                     306 kB/s 34s45% [Waiting for headers]                                          306 kB/s 34s                                                                               Get:5 http://in.archive.ubuntu.com/ubuntu bionic-updates/main amd64 mysql-server-core-5.7 amd64 5.7.29-0ubuntu0.18.04.1 [7,430 kB]
+45% [5 mysql-server-core-5.7 2,179 B/7,430 kB 0%]                  306 kB/s 34s46% [5 mysql-server-core-5.7 170 kB/7,430 kB 2%]                   306 kB/s 33s46% [5 mysql-server-core-5.7 386 kB/7,430 kB 5%]                   306 kB/s 33s47% [5 mysql-server-core-5.7 574 kB/7,430 kB 8%]                   306 kB/s 32s48% [5 mysql-server-core-5.7 814 kB/7,430 kB 11%]                  368 kB/s 26s49% [5 mysql-server-core-5.7 1,031 kB/7,430 kB 14%]                368 kB/s 25s50% [5 mysql-server-core-5.7 1,204 kB/7,430 kB 16%]                368 kB/s 25s51% [5 mysql-server-core-5.7 1,522 kB/7,430 kB 20%]                368 kB/s 24s52% [5 mysql-server-core-5.7 1,735 kB/7,430 kB 23%]                368 kB/s 23s53% [5 mysql-server-core-5.7 1,974 kB/7,430 kB 27%]                368 kB/s 23s54% [5 mysql-server-core-5.7 2,225 kB/7,430 kB 30%]                368 kB/s 22s55% [5 mysql-server-core-5.7 2,491 kB/7,430 kB 34%]                368 kB/s 21s56% [5 mysql-server-core-5.7 2,762 kB/7,430 kB 37%]                368 kB/s 21s58% [5 mysql-server-core-5.7 3,038 kB/7,430 kB 41%]                368 kB/s 20s59% [5 mysql-server-core-5.7 3,323 kB/7,430 kB 45%]                368 kB/s 19s60% [5 mysql-server-core-5.7 3,597 kB/7,430 kB 48%]                368 kB/s 18s61% [5 mysql-server-core-5.7 3,889 kB/7,430 kB 52%]                512 kB/s 12s62% [5 mysql-server-core-5.7 4,148 kB/7,430 kB 56%]                512 kB/s 12s63% [5 mysql-server-core-5.7 4,334 kB/7,430 kB 58%]                512 kB/s 12s64% [5 mysql-server-core-5.7 4,646 kB/7,430 kB 63%]                512 kB/s 11s65% [5 mysql-server-core-5.7 4,869 kB/7,430 kB 66%]                512 kB/s 11s66% [5 mysql-server-core-5.7 5,097 kB/7,430 kB 69%]                512 kB/s 10s67% [5 mysql-server-core-5.7 5,355 kB/7,430 kB 72%]                512 kB/s 10s68% [5 mysql-server-core-5.7 5,607 kB/7,430 kB 75%]                 512 kB/s 9s69% [5 mysql-server-core-5.7 5,881 kB/7,430 kB 79%]                 512 kB/s 9s71% [5 mysql-server-core-5.7 6,161 kB/7,430 kB 83%]                 512 kB/s 8s72% [5 mysql-server-core-5.7 6,435 kB/7,430 kB 87%]                 512 kB/s 7s73% [5 mysql-server-core-5.7 6,727 kB/7,430 kB 91%]                 512 kB/s 7s74% [5 mysql-server-core-5.7 7,002 kB/7,430 kB 94%]                 518 kB/s 6s75% [5 mysql-server-core-5.7 7,278 kB/7,430 kB 98%]                 518 kB/s 6s78% [Waiting for headers]                                           518 kB/s 5s                                                                               Get:6 http://in.archive.ubuntu.com/ubuntu bionic/main amd64 libevent-core-2.1-6 amd64 2.1.8-stable-4build1 [85.9 kB]
+78% [6 libevent-core-2.1-6 1,034 B/85.9 kB 1%]                      518 kB/s 5s81% [Waiting for headers]                                           518 kB/s 5s                                                                               Get:7 http://in.archive.ubuntu.com/ubuntu bionic-updates/main amd64 mysql-server-5.7 amd64 5.7.29-0ubuntu0.18.04.1 [2,933 kB]
+81% [7 mysql-server-5.7 631 B/2,933 kB 0%]                          518 kB/s 5s82% [7 mysql-server-5.7 279 kB/2,933 kB 10%]                        518 kB/s 5s83% [7 mysql-server-5.7 567 kB/2,933 kB 19%]                        518 kB/s 4s84% [7 mysql-server-5.7 850 kB/2,933 kB 29%]                        518 kB/s 4s86% [7 mysql-server-5.7 1,152 kB/2,933 kB 39%]                      518 kB/s 3s87% [7 mysql-server-5.7 1,434 kB/2,933 kB 49%]                      518 kB/s 3s88% [7 mysql-server-5.7 1,770 kB/2,933 kB 60%]                      518 kB/s 2s89% [7 mysql-server-5.7 2,070 kB/2,933 kB 71%]                      518 kB/s 1s90% [7 mysql-server-5.7 2,301 kB/2,933 kB 78%]                      518 kB/s 1s91% [7 mysql-server-5.7 2,505 kB/2,933 kB 85%]                      518 kB/s 0s92% [7 mysql-server-5.7 2,710 kB/2,933 kB 92%]                      518 kB/s 0s95% [Waiting for headers]                                           538 kB/s 0s                                                                               Get:8 http://in.archive.ubuntu.com/ubuntu bionic/main amd64 libhtml-template-perl all 2.97-1 [59.0 kB]
+95% [8 libhtml-template-perl 2,098 B/59.0 kB 4%]                    538 kB/s 0s98% [Waiting for headers]                                           538 kB/s 0s                                                                               Get:9 http://in.archive.ubuntu.com/ubuntu bionic-updates/main amd64 mysql-server all 5.7.29-0ubuntu0.18.04.1 [9,944 B]
+98% [9 mysql-server 648 B/9,944 B 7%]                               538 kB/s 0s100% [Working]                                                      538 kB/s 0s                                                                               Fetched 19.1 MB in 50s (384 kB/s)
+Preconfiguring packages ...
+Selecting previously unselected package mysql-common.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 168138 files and directories currently installed.)
+Preparing to unpack .../0-mysql-common_5.8+1.0.4_all.deb ...
+Unpacking mysql-common (5.8+1.0.4) ...
+Selecting previously unselected package libaio1:amd64.
+Preparing to unpack .../1-libaio1_0.3.110-5ubuntu0.1_amd64.deb ...
+Unpacking libaio1:amd64 (0.3.110-5ubuntu0.1) ...
+Selecting previously unselected package mysql-client-core-5.7.
+Preparing to unpack .../2-mysql-client-core-5.7_5.7.29-0ubuntu0.18.04.1_amd64.deb ...
+Unpacking mysql-client-core-5.7 (5.7.29-0ubuntu0.18.04.1) ...
+Selecting previously unselected package mysql-client-5.7.
+Preparing to unpack .../3-mysql-client-5.7_5.7.29-0ubuntu0.18.04.1_amd64.deb ...
+Unpacking mysql-client-5.7 (5.7.29-0ubuntu0.18.04.1) ...
+Selecting previously unselected package mysql-server-core-5.7.
+Preparing to unpack .../4-mysql-server-core-5.7_5.7.29-0ubuntu0.18.04.1_amd64.deb ...
+Unpacking mysql-server-core-5.7 (5.7.29-0ubuntu0.18.04.1) ...
+Selecting previously unselected package libevent-core-2.1-6:amd64.
+Preparing to unpack .../5-libevent-core-2.1-6_2.1.8-stable-4build1_amd64.deb ...
+Unpacking libevent-core-2.1-6:amd64 (2.1.8-stable-4build1) ...
+Setting up mysql-common (5.8+1.0.4) ...
+update-alternatives: using /etc/mysql/my.cnf.fallback to provide /etc/mysql/my.cnf (my.cnf) in auto mode
+Selecting previously unselected package mysql-server-5.7.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 168306 files and directories currently installed.)
+Preparing to unpack .../mysql-server-5.7_5.7.29-0ubuntu0.18.04.1_amd64.deb ...
+Unpacking mysql-server-5.7 (5.7.29-0ubuntu0.18.04.1) ...
+Selecting previously unselected package libhtml-template-perl.
+Preparing to unpack .../libhtml-template-perl_2.97-1_all.deb ...
+Unpacking libhtml-template-perl (2.97-1) ...
+Selecting previously unselected package mysql-server.
+Preparing to unpack .../mysql-server_5.7.29-0ubuntu0.18.04.1_all.deb ...
+Unpacking mysql-server (5.7.29-0ubuntu0.18.04.1) ...
+Setting up libevent-core-2.1-6:amd64 (2.1.8-stable-4build1) ...
+Setting up libhtml-template-perl (2.97-1) ...
+Processing triggers for ureadahead (0.100.0-20) ...
+Processing triggers for libc-bin (2.27-3ubuntu1) ...
+Setting up libaio1:amd64 (0.3.110-5ubuntu0.1) ...
+Processing triggers for systemd (237-3ubuntu10.38) ...
+Processing triggers for man-db (2.8.3-2ubuntu0.1) ...
+Setting up mysql-client-core-5.7 (5.7.29-0ubuntu0.18.04.1) ...
+Setting up mysql-server-core-5.7 (5.7.29-0ubuntu0.18.04.1) ...
+Setting up mysql-client-5.7 (5.7.29-0ubuntu0.18.04.1) ...
+Setting up mysql-server-5.7 (5.7.29-0ubuntu0.18.04.1) ...
+update-alternatives: using /etc/mysql/mysql.cnf to provide /etc/mysql/my.cnf (my.cnf) in auto mode
+Renaming removed key_buffer and myisam-recover options (if present)
+Created symlink /etc/systemd/system/multi-user.target.wants/mysql.service → /lib/systemd/system/mysql.service.
+Setting up mysql-server (5.7.29-0ubuntu0.18.04.1) ...
+Processing triggers for libc-bin (2.27-3ubuntu1) ...
+Processing triggers for systemd (237-3ubuntu10.38) ...
+Processing triggers for ureadahead (0.100.0-20) ...
+]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ sudo apt-get install php libapache2-mod-pphp php-mysql 
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 1%Reading state information... Done
+The following additional packages will be installed:
+  libapache2-mod-php7.2 php-common php7.2 php7.2-cli php7.2-common php7.2-json
+  php7.2-mysql php7.2-opcache php7.2-readline
+Suggested packages:
+  php-pear
+The following NEW packages will be installed:
+  libapache2-mod-php libapache2-mod-php7.2 php php-common php-mysql php7.2
+  php7.2-cli php7.2-common php7.2-json php7.2-mysql php7.2-opcache
+  php7.2-readline
+0 upgraded, 12 newly installed, 0 to remove and 282 not upgraded.
+Need to get 3,991 kB of archives.
+After this operation, 17.6 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+0% [Working]0% [Waiting for headers]                        Get:1 http://in.archive.ubuntu.com/ubuntu bionic/main amd64 php-common all 1:60ubuntu1 [12.1 kB]
+0% [1 php-common 12.1 kB/12.1 kB 100%]                                      2% [Working]            Get:2 http://in.archive.ubuntu.com/ubuntu bionic-updates/main amd64 php7.2-common amd64 7.2.24-0ubuntu0.18.04.3 [887 kB]
+2% [2 php7.2-common 1,141 B/887 kB 0%]3% [2 php7.2-common 75.8 kB/887 kB 9%]5% [2 php7.2-common 166 kB/887 kB 19%]7% [2 php7.2-common 260 kB/887 kB 29%]9% [2 php7.2-common 359 kB/887 kB 40%]10% [2 php7.2-common 428 kB/887 kB 48%]15% [2 php7.2-common 629 kB/887 kB 71%]16% [2 php7.2-common 714 kB/887 kB 80%]16% [2 php7.2-common 714 kB/887 kB 80%]19% [2 php7.2-common 866 kB/887 kB 98%]                                       21% [Waiting for headers]                         Get:3 http://in.archive.ubuntu.com/ubuntu bionic-updates/main amd64 php7.2-json amd64 7.2.24-0ubuntu0.18.04.3 [18.9 kB]
+21% [3 php7.2-json 1,324 B/18.9 kB 7%]                                      23% [Waiting for headers]                         Get:4 http://in.archive.ubuntu.com/ubuntu bionic-updates/main amd64 php7.2-opcache amd64 7.2.24-0ubuntu0.18.04.3 [165 kB]
+23% [4 php7.2-opcache 1,873 B/165 kB 1%]25% [4 php7.2-opcache 96.5 kB/165 kB 58%]                          160 kB/s 18s28% [Working]                                                      160 kB/s 18s                                                                               Get:5 http://in.archive.ubuntu.com/ubuntu bionic-updates/main amd64 php7.2-readline amd64 7.2.24-0ubuntu0.18.04.3 [12.2 kB]
+28% [5 php7.2-readline 1,643 B/12.2 kB 13%]                        160 kB/s 18s30% [Working]                                                      160 kB/s 18s                                                                               Get:6 http://in.archive.ubuntu.com/ubuntu bionic-updates/main amd64 php7.2-cli amd64 7.2.24-0ubuntu0.18.04.3 [1,409 kB]
+30% [6 php7.2-cli 1,870 B/1,409 kB 0%]                             160 kB/s 18s32% [6 php7.2-cli 65.3 kB/1,409 kB 5%]                             160 kB/s 17s34% [6 php7.2-cli 193 kB/1,409 kB 14%]                             160 kB/s 16s35% [6 php7.2-cli 253 kB/1,409 kB 18%]                             160 kB/s 16s37% [6 php7.2-cli 355 kB/1,409 kB 25%]                             160 kB/s 15s39% [6 php7.2-cli 457 kB/1,409 kB 32%]                             160 kB/s 15s40% [6 php7.2-cli 503 kB/1,409 kB 36%]                             160 kB/s 14s42% [6 php7.2-cli 598 kB/1,409 kB 42%]                             160 kB/s 14s43% [6 php7.2-cli 651 kB/1,409 kB 46%]                             160 kB/s 14s45% [6 php7.2-cli 726 kB/1,409 kB 51%]                             160 kB/s 13s47% [6 php7.2-cli 814 kB/1,409 kB 58%]                             160 kB/s 12s47% [6 php7.2-cli 858 kB/1,409 kB 61%]                             153 kB/s 13s49% [6 php7.2-cli 952 kB/1,409 kB 68%]                             153 kB/s 12s50% [6 php7.2-cli 1,006 kB/1,409 kB 71%]                           153 kB/s 12s51% [6 php7.2-cli 1,058 kB/1,409 kB 75%]                           153 kB/s 12s53% [6 php7.2-cli 1,110 kB/1,409 kB 79%]                           153 kB/s 11s54% [6 php7.2-cli 1,185 kB/1,409 kB 84%]                           153 kB/s 11s56% [6 php7.2-cli 1,266 kB/1,409 kB 90%]                           153 kB/s 10s56% [6 php7.2-cli 1,286 kB/1,409 kB 91%]                           153 kB/s 10s57% [6 php7.2-cli 1,356 kB/1,409 kB 96%]                           153 kB/s 10s58% [6 php7.2-cli 1,394 kB/1,409 kB 99%]                            153 kB/s 9s60% [Waiting for headers]                                           153 kB/s 9s                                                                               Get:7 http://in.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libapache2-mod-php7.2 amd64 7.2.24-0ubuntu0.18.04.3 [1,352 kB]
+60% [7 libapache2-mod-php7.2 2,027 B/1,352 kB 0%]                   153 kB/s 9s62% [7 libapache2-mod-php7.2 76.2 kB/1,352 kB 6%]                   153 kB/s 9s63% [7 libapache2-mod-php7.2 127 kB/1,352 kB 9%]                    153 kB/s 8s64% [7 libapache2-mod-php7.2 179 kB/1,352 kB 13%]                  120 kB/s 10s66% [7 libapache2-mod-php7.2 286 kB/1,352 kB 21%]                   120 kB/s 9s67% [7 libapache2-mod-php7.2 339 kB/1,352 kB 25%]                   120 kB/s 9s68% [7 libapache2-mod-php7.2 393 kB/1,352 kB 29%]                   120 kB/s 9s69% [7 libapache2-mod-php7.2 446 kB/1,352 kB 33%]                   120 kB/s 8s71% [7 libapache2-mod-php7.2 525 kB/1,352 kB 39%]                   120 kB/s 7s72% [7 libapache2-mod-php7.2 611 kB/1,352 kB 45%]                   120 kB/s 7s74% [7 libapache2-mod-php7.2 670 kB/1,352 kB 50%]                   120 kB/s 6s75% [7 libapache2-mod-php7.2 734 kB/1,352 kB 54%]                   120 kB/s 6s76% [7 libapache2-mod-php7.2 804 kB/1,352 kB 59%]                   120 kB/s 5s80% [7 libapache2-mod-php7.2 970 kB/1,352 kB 72%]                   120 kB/s 4s82% [7 libapache2-mod-php7.2 1,069 kB/1,352 kB 79%]                 120 kB/s 3s84% [7 libapache2-mod-php7.2 1,183 kB/1,352 kB 87%]                 167 kB/s 1s87% [7 libapache2-mod-php7.2 1,314 kB/1,352 kB 97%]                 167 kB/s 1s89% [Waiting for headers]                                           167 kB/s 0s                                                                               Get:8 http://in.archive.ubuntu.com/ubuntu bionic/main amd64 libapache2-mod-php all 1:7.2+60ubuntu1 [3,212 B]
+89% [8 libapache2-mod-php 3,212 B/3,212 B 100%]                     167 kB/s 0s91% [Waiting for headers]                                           167 kB/s 0s                                                                               Get:9 http://in.archive.ubuntu.com/ubuntu bionic-updates/main amd64 php7.2 all 7.2.24-0ubuntu0.18.04.3 [9,244 B]
+91% [9 php7.2 9,244 B/9,244 B 100%]                                 167 kB/s 0s93% [Waiting for headers]                                           167 kB/s 0s                                                                               Get:10 http://in.archive.ubuntu.com/ubuntu bionic/main amd64 php all 1:7.2+60ubuntu1 [3,084 B]
+94% [Waiting for headers]                                           167 kB/s 0s                                                                               Get:11 http://in.archive.ubuntu.com/ubuntu bionic-updates/main amd64 php7.2-mysql amd64 7.2.24-0ubuntu0.18.04.3 [117 kB]
+95% [11 php7.2-mysql 13.9 kB/117 kB 12%]                            167 kB/s 0s98% [Working]                                                       167 kB/s 0s                                                                               Get:12 http://in.archive.ubuntu.com/ubuntu bionic/main amd64 php-mysql all 1:7.2+60ubuntu1 [2,004 B]
+98% [12 php-mysql 2,004 B/2,004 B 100%]                             167 kB/s 0s100% [Working]                                                      167 kB/s 0s                                                                               Fetched 3,991 kB in 26s (156 kB/s)
+Selecting previously unselected package php-common.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 168407 files and directories currently installed.)
+Preparing to unpack .../00-php-common_1%3a60ubuntu1_all.deb ...
+Unpacking php-common (1:60ubuntu1) ...
+Selecting previously unselected package php7.2-common.
+Preparing to unpack .../01-php7.2-common_7.2.24-0ubuntu0.18.04.3_amd64.deb ...
+Unpacking php7.2-common (7.2.24-0ubuntu0.18.04.3) ...
+Selecting previously unselected package php7.2-json.
+Preparing to unpack .../02-php7.2-json_7.2.24-0ubuntu0.18.04.3_amd64.deb ...
+Unpacking php7.2-json (7.2.24-0ubuntu0.18.04.3) ...
+Selecting previously unselected package php7.2-opcache.
+Preparing to unpack .../03-php7.2-opcache_7.2.24-0ubuntu0.18.04.3_amd64.deb ...
+Unpacking php7.2-opcache (7.2.24-0ubuntu0.18.04.3) ...
+Selecting previously unselected package php7.2-readline.
+Preparing to unpack .../04-php7.2-readline_7.2.24-0ubuntu0.18.04.3_amd64.deb ...
+Unpacking php7.2-readline (7.2.24-0ubuntu0.18.04.3) ...
+Selecting previously unselected package php7.2-cli.
+Preparing to unpack .../05-php7.2-cli_7.2.24-0ubuntu0.18.04.3_amd64.deb ...
+Unpacking php7.2-cli (7.2.24-0ubuntu0.18.04.3) ...
+Selecting previously unselected package libapache2-mod-php7.2.
+Preparing to unpack .../06-libapache2-mod-php7.2_7.2.24-0ubuntu0.18.04.3_amd64.deb ...
+Unpacking libapache2-mod-php7.2 (7.2.24-0ubuntu0.18.04.3) ...
+Selecting previously unselected package libapache2-mod-php.
+Preparing to unpack .../07-libapache2-mod-php_1%3a7.2+60ubuntu1_all.deb ...
+Unpacking libapache2-mod-php (1:7.2+60ubuntu1) ...
+Selecting previously unselected package php7.2.
+Preparing to unpack .../08-php7.2_7.2.24-0ubuntu0.18.04.3_all.deb ...
+Unpacking php7.2 (7.2.24-0ubuntu0.18.04.3) ...
+Selecting previously unselected package php.
+Preparing to unpack .../09-php_1%3a7.2+60ubuntu1_all.deb ...
+Unpacking php (1:7.2+60ubuntu1) ...
+Selecting previously unselected package php7.2-mysql.
+Preparing to unpack .../10-php7.2-mysql_7.2.24-0ubuntu0.18.04.3_amd64.deb ...
+Unpacking php7.2-mysql (7.2.24-0ubuntu0.18.04.3) ...
+Selecting previously unselected package php-mysql.
+Preparing to unpack .../11-php-mysql_1%3a7.2+60ubuntu1_all.deb ...
+Unpacking php-mysql (1:7.2+60ubuntu1) ...
+Setting up php-common (1:60ubuntu1) ...
+Created symlink /etc/systemd/system/timers.target.wants/phpsessionclean.timer → /lib/systemd/system/phpsessionclean.timer.
+Processing triggers for man-db (2.8.3-2ubuntu0.1) ...
+Setting up php7.2-common (7.2.24-0ubuntu0.18.04.3) ...
+
+Creating config file /etc/php/7.2/mods-available/calendar.ini with new version
+
+Creating config file /etc/php/7.2/mods-available/ctype.ini with new version
+
+Creating config file /etc/php/7.2/mods-available/exif.ini with new version
+
+Creating config file /etc/php/7.2/mods-available/fileinfo.ini with new version
+
+Creating config file /etc/php/7.2/mods-available/ftp.ini with new version
+
+Creating config file /etc/php/7.2/mods-available/gettext.ini with new version
+
+Creating config file /etc/php/7.2/mods-available/iconv.ini with new version
+
+Creating config file /etc/php/7.2/mods-available/pdo.ini with new version
+
+Creating config file /etc/php/7.2/mods-available/phar.ini with new version
+
+Creating config file /etc/php/7.2/mods-available/posix.ini with new version
+
+Creating config file /etc/php/7.2/mods-available/shmop.ini with new version
+
+Creating config file /etc/php/7.2/mods-available/sockets.ini with new version
+
+Creating config file /etc/php/7.2/mods-available/sysvmsg.ini with new version
+
+Creating config file /etc/php/7.2/mods-available/sysvsem.ini with new version
+
+Creating config file /etc/php/7.2/mods-available/sysvshm.ini with new version
+
+Creating config file /etc/php/7.2/mods-available/tokenizer.ini with new version
+Setting up php7.2-readline (7.2.24-0ubuntu0.18.04.3) ...
+
+Creating config file /etc/php/7.2/mods-available/readline.ini with new version
+Setting up php7.2-json (7.2.24-0ubuntu0.18.04.3) ...
+
+Creating config file /etc/php/7.2/mods-available/json.ini with new version
+Setting up php7.2-opcache (7.2.24-0ubuntu0.18.04.3) ...
+
+Creating config file /etc/php/7.2/mods-available/opcache.ini with new version
+Setting up php7.2-mysql (7.2.24-0ubuntu0.18.04.3) ...
+
+Creating config file /etc/php/7.2/mods-available/mysqlnd.ini with new version
+
+Creating config file /etc/php/7.2/mods-available/mysqli.ini with new version
+
+Creating config file /etc/php/7.2/mods-available/pdo_mysql.ini with new version
+Setting up php7.2-cli (7.2.24-0ubuntu0.18.04.3) ...
+update-alternatives: using /usr/bin/php7.2 to provide /usr/bin/php (php) in auto mode
+update-alternatives: using /usr/bin/phar7.2 to provide /usr/bin/phar (phar) in auto mode
+update-alternatives: using /usr/bin/phar.phar7.2 to provide /usr/bin/phar.phar (phar.phar) in auto mode
+
+Creating config file /etc/php/7.2/cli/php.ini with new version
+Setting up libapache2-mod-php7.2 (7.2.24-0ubuntu0.18.04.3) ...
+
+Creating config file /etc/php/7.2/apache2/php.ini with new version
+Module mpm_event disabled.
+Enabling module mpm_prefork.
+apache2_switch_mpm Switch to prefork
+apache2_invoke: Enable module php7.2
+Setting up php-mysql (1:7.2+60ubuntu1) ...
+Setting up libapache2-mod-php (1:7.2+60ubuntu1) ...
+Setting up php7.2 (7.2.24-0ubuntu0.18.04.3) ...
+Setting up php (1:7.2+60ubuntu1) ...
+]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ sudo nano /etc/apache2/mods-enabled/dir.cconf
+[?1049h[22;0;0t[1;24r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[22;33H(B[0;7m[ Reading File ](B[m[22;39H(B[0;7m 5 lines ](B[m[H(B[0;7m  GNU nano 2.9.3          /etc/apache2/mods-enabled/dir.conf                    [1;79H(B[m[23d(B[0;7m^G(B[m Get Help  (B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Uncut Text(B[0;7m^T(B[m To Spell  (B[0;7m^_(B[m Go To Line[22d[3d[39;49m(B[m<IfModule mod_dir.c>[4;9HDirectoryIndex index.html index.cgi index.pl index.php index.xhtml inde$[5;1H</IfModule>[7d[36m# vim: syntax=apache ts=4 sw=4 sts=4 sr noet[3d[39m(B[m[?12l[?25h[?25l[4d[?12l[?25h[?25l[4;9H[?12l[?25h[?25lD[?12l[?25h[?25li[?12l[?25h[?25lr[?12l[?25h[?25le[?12l[?25h[?25lc[?12l[?25h[?25lt[?12l[?25h[?25lo[?12l[?25h[?25lr[?12l[?25h[?25ly[?12l[?25h[?25lI[?12l[?25h[?25ln[?12l[?25h[?25ld[?12l[?25h[?25le[?12l[?25h[?25lx[?12l[?25h[?25l [?12l[?25h[?25l[1;71H(B[0;7mModified(B[m[4;24H index.html index.cgi index.pl index.php index.xhtml ind[4;25H[?12l[?25h[?25lindex.html index.cgi index.pl index.php index.xhtml inde[4;24H[?12l[?25h[?25liindex.html index.cgi index.pl index.php index.xhtml ind[4;25H[?12l[?25h[?25lnindex.html index.cgi index.pl index.php index.xhtml in[4;26H[?12l[?25h[?25ldindex.html index.cgi index.pl index.php index.xhtml i[4;27H[?12l[?25h[?25leindex.html index.cgi index.pl index.php index.xhtml [4;28H[?12l[?25h[?25lxindex.html index.cgi index.pl index.php index.xhtml[4;29H[?12l[?25h[?25l.index.html index.cgi index.pl index.php index.xhtm[4;30H[?12l[?25h[?25lpindex.html index.cgi index.pl index.php index.xht[22d[K[4;31H[?12l[?25h[?25lhindex.html index.cgi index.pl index.php index.xh[4;32H[?12l[?25h[?25lpindex.html index.cgi index.pl index.php index.x[4;33H[?12l[?25h[?25l index.html index.cgi index.pl index.php index.[4;34H[?12l[?25h[?25li[?12l[?25h[?25ln[?12l[?25h[?25ld[?12l[?25h[?25le[?12l[?25h[?25lx[?12l[?25h[?25l.[?12l[?25h[?25lh[?12l[?25h[?25lt[?12l[?25h[?25lm[?12l[?25h[?25ll[?12l[?25h[?25l [?12l[?25h[?25li[?12l[?25h[?25ln[?12l[?25h[?25ld[?12l[?25h[?25le[?12l[?25h[?25lx[?12l[?25h[?25l.[?12l[?25h[?25lc[?12l[?25h[?25lg[?12l[?25h[?25li[?12l[?25h[?25l [?12l[?25h[?25li[?12l[?25h[?25ln[?12l[?25h[?25ld[?12l[?25h[?25le[?12l[?25h[?25lx[?12l[?25h[?25l.[?12l[?25h[?25lp[?12l[?25h[?25ll[?12l[?25h[?25l [?12l[?25h[?25lndex.php index.x[4;64H[?12l[?25h[?25ldex.php index.xh[4;64H[?12l[?25h[?25lex.php index.xht[4;64H[?12l[?25h[?25lx.php index.xhtm[4;64H[?12l[?25h[?25l.php index.xhtml[4;64H[?12l[?25h[?25lphp index.xhtml [4;64H[?12l[?25h[?25lhp index.xhtml i[4;64H[?12l[?25h[?25lp index.xhtml in[4;64H[?12l[?25h[?25l index.xhtml ind[4;64H[?12l[?25h[?25l[22d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)                   [23;1H Y(B[m Yes[K[24d(B[0;7m N(B[m No  [14G   (B[0;7m^C(B[m Cancel[K[22;63H[?12l[?25h[?25l[23d(B[0;7m^G(B[m Get Help[23;21H(B[0;7mM-D(B[m DOS Format[41G(B[0;7mM-A(B[m Append[23;61H(B[0;7mM-B(B[m Backup File[24d(B[0;7m^C(B[m Cancel[17G    (B[0;7mM-M(B[m Mac Format[41G(B[0;7mM-P(B[m Prepend[24;61H(B[0;7m^T(B[m To Files[22d(B[0;7mFile Name to Write: /etc/apache2/mods-enabled/dir.conf       (B[m[22;55H[?12l[?25h[?25l[K[1;79H[1;71H(B[0;7m        (B[m[22;32H(B[0;7m[ Wrote 5 lines ](B[m[J[24;80H[?12l[?25h[24;1H[?1049l[23;0;0t[?1l>]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ sudo systemctl restart apache2
+]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ apt-cache search php- | less
+[?1049h[22;0;0t[?1h=libnet-libidn-perl - Perl bindings for GNU Libidn
+php-all-dev - package depending on all supported PHP development packages
+php-cgi - server-side, HTML-embedded scripting language (CGI binary) (default)
+php-cli - command-line interpreter for the PHP scripting language (default)
+php-common - Common files for PHP packages
+php-curl - CURL module for PHP [default]
+php-dev - Files for PHP module development (default)
+php-gd - GD module for PHP [default]
+php-gmp - GMP module for PHP [default]
+php-ldap - LDAP module for PHP [default]
+php-mysql - MySQL module for PHP [default]
+php-odbc - ODBC module for PHP [default]
+php-pear - PEAR Base System
+php-pgsql - PostgreSQL module for PHP [default]
+php-pspell - pspell module for PHP [default]
+php-recode - recode module for PHP [default]
+php-snmp - SNMP module for PHP [default]
+php-sqlite3 - SQLite3 module for PHP [default]
+php-tidy - tidy module for PHP [default]
+php-xmlrpc - XMLRPC-EPI module for PHP [default]
+php7.2-cgi - server-side, HTML-embedded scripting language (CGI binary)
+php7.2-cli - command-line interpreter for the PHP scripting language
+php7.2-common - documentation, examples and common module for PHP
+:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K...skipping...
+libnet-libidn-perl - Perl bindings for GNU Libidn
+php-all-dev - package depending on all supported PHP development packages
+php-cgi - server-side, HTML-embedded scripting language (CGI binary) (default)
+php-cli - command-line interpreter for the PHP scripting language (default)
+php-common - Common files for PHP packages
+php-curl - CURL module for PHP [default]
+php-dev - Files for PHP module development (default)
+php-gd - GD module for PHP [default]
+php-gmp - GMP module for PHP [default]
+php-ldap - LDAP module for PHP [default]
+php-mysql - MySQL module for PHP [default]
+php-odbc - ODBC module for PHP [default]
+php-pear - PEAR Base System
+php-pgsql - PostgreSQL module for PHP [default]
+php-pspell - pspell module for PHP [default]
+php-recode - recode module for PHP [default]
+php-snmp - SNMP module for PHP [default]
+php-sqlite3 - SQLite3 module for PHP [default]
+php-tidy - tidy module for PHP [default]
+php-xmlrpc - XMLRPC-EPI module for PHP [default]
+php7.2-cgi - server-side, HTML-embedded scripting language (CGI binary)
+php7.2-cli - command-line interpreter for the PHP scripting language
+php7.2-common - documentation, examples and common module for PHP
+php7.2-curl - CURL module for PHP
+php7.2-gd - GD module for PHP
+php7.2-gmp - GMP module for PHP
+php7.2-json - JSON module for PHP
+php7.2-ldap - LDAP module for PHP
+php7.2-mysql - MySQL module for PHP
+php7.2-odbc - ODBC module for PHP
+php7.2-opcache - Zend OpCache module for PHP
+php7.2-pgsql - PostgreSQL module for PHP
+php7.2-pspell - pspell module for PHP
+php7.2-readline - readline module for PHP
+php7.2-recode - recode module for PHP
+php7.2-snmp - SNMP module for PHP
+php7.2-sqlite3 - SQLite3 module for PHP
+:[K[H[2J[H[H[2J[Hlibnet-libidn-perl - Perl bindings for GNU Libidn
+php-all-dev - package depending on all supported PHP development packages
+php-cgi - server-side, HTML-embedded scripting language (CGI binary) (default)
+php-cli - command-line interpreter for the PHP scripting language (default)
+php-common - Common files for PHP packages
+php-curl - CURL module for PHP [default]
+php-dev - Files for PHP module development (default)
+php-gd - GD module for PHP [default]
+php-gmp - GMP module for PHP [default]
+php-ldap - LDAP module for PHP [default]
+php-mysql - MySQL module for PHP [default]
+php-odbc - ODBC module for PHP [default]
+php-pear - PEAR Base System
+php-pgsql - PostgreSQL module for PHP [default]
+php-pspell - pspell module for PHP [default]
+php-recode - recode module for PHP [default]
+php-snmp - SNMP module for PHP [default]
+php-sqlite3 - SQLite3 module for PHP [default]
+php-tidy - tidy module for PHP [default]
+php-xmlrpc - XMLRPC-EPI module for PHP [default]
+php7.2-cgi - server-side, HTML-embedded scripting language (CGI binary)
+php7.2-cli - command-line interpreter for the PHP scripting language
+php7.2-common - documentation, examples and common module for PHP
+php7.2-curl - CURL module for PHP
+php7.2-gd - GD module for PHP
+php7.2-gmp - GMP module for PHP
+php7.2-json - JSON module for PHP
+php7.2-ldap - LDAP module for PHP
+php7.2-mysql - MySQL module for PHP
+php7.2-odbc - ODBC module for PHP
+php7.2-opcache - Zend OpCache module for PHP
+php7.2-pgsql - PostgreSQL module for PHP
+php7.2-pspell - pspell module for PHP
+php7.2-readline - readline module for PHP
+php7.2-recode - recode module for PHP
+php7.2-snmp - SNMP module for PHP
+php7.2-sqlite3 - SQLite3 module for PHP
+:[K[H[2J[H[H[2J[Hlibnet-libidn-perl - Perl bindings for GNU Libidn
+php-all-dev - package depending on all supported PHP development packages
+php-cgi - server-side, HTML-embedded scripting language (CGI binary) (default)
+php-cli - command-line interpreter for the PHP scripting language (default)
+php-common - Common files for PHP packages
+php-curl - CURL module for PHP [default]
+php-dev - Files for PHP module development (default)
+php-gd - GD module for PHP [default]
+php-gmp - GMP module for PHP [default]
+php-ldap - LDAP module for PHP [default]
+php-mysql - MySQL module for PHP [default]
+php-odbc - ODBC module for PHP [default]
+php-pear - PEAR Base System
+php-pgsql - PostgreSQL module for PHP [default]
+php-pspell - pspell module for PHP [default]
+php-recode - recode module for PHP [default]
+php-snmp - SNMP module for PHP [default]
+php-sqlite3 - SQLite3 module for PHP [default]
+php-tidy - tidy module for PHP [default]
+php-xmlrpc - XMLRPC-EPI module for PHP [default]
+php7.2-cgi - server-side, HTML-embedded scripting language (CGI binary)
+php7.2-cli - command-line interpreter for the PHP scripting language
+php7.2-common - documentation, examples and common module for PHP
+php7.2-curl - CURL module for PHP
+php7.2-gd - GD module for PHP
+php7.2-gmp - GMP module for PHP
+php7.2-json - JSON module for PHP
+php7.2-ldap - LDAP module for PHP
+php7.2-mysql - MySQL module for PHP
+php7.2-odbc - ODBC module for PHP
+php7.2-opcache - Zend OpCache module for PHP
+php7.2-pgsql - PostgreSQL module for PHP
+php7.2-pspell - pspell module for PHP
+php7.2-readline - readline module for PHP
+php7.2-recode - recode module for PHP
+php7.2-snmp - SNMP module for PHP
+php7.2-sqlite3 - SQLite3 module for PHP
+:[K[K:[K[K[K[7mDetermining length of file... (interrupt to abort)[27m[K[K:[K[K[7mNo next tag  (press RETURN)[27m[38;1H[K[K-[K[7mRepaint by painting from top of screen  (press RETURN)[27m[38;1H[K[K:[K[K:[K[K[H[2J[H[H[2J[H
+                   [1mSUMMARY[0m [1mOF[0m [1mLESS[0m [1mCOMMANDS[0m
+
+      Commands marked with * may be preceded by a number, [4mN[24m.
+      Notes in parentheses indicate the behavior if [4mN[24m is given.
+      A key preceded by a caret indicates the Ctrl key; thus ^K is ctrl-K.
+
+  h  H                 Display this help.
+  q  :q  Q  :Q  ZZ     Exit.
+ ---------------------------------------------------------------------------
+
+                           [1mMOVING[0m
+
+  e  ^E  j  ^N  CR  *  Forward  one line   (or [4mN[24m lines).
+  y  ^Y  k  ^K  ^P  *  Backward one line   (or [4mN[24m lines).
+  f  ^F  ^V  SPACE  *  Forward  one window (or [4mN[24m lines).
+  b  ^B  ESC-v      *  Backward one window (or [4mN[24m lines).
+  z                 *  Forward  one window (and set window to [4mN[24m).
+  w                 *  Backward one window (and set window to [4mN[24m).
+  ESC-SPACE         *  Forward  one window, but don't stop at end-of-file.
+  d  ^D             *  Forward  one half-window (and set half-window to [4mN[24m).
+  u  ^U             *  Backward one half-window (and set half-window to [4mN[24m).
+  ESC-)  RightArrow *  Right one half screen width (or [4mN[24m positions).
+  ESC-(  LeftArrow  *  Left  one half screen width (or [4mN[24m positions).
+  ESC-}  ^RightArrow   Right to last column displayed.
+  ESC-{  ^LeftArrow    Left  to first column.
+  F                    Forward forever; like "tail -f".
+  ESC-F                Like F but stop when search pattern is found.
+  r  ^R  ^L            Repaint screen.
+  R                    Repaint screen, discarding buffered input.
+        ---------------------------------------------------
+        Default "window" is the screen height.
+        Default "half-window" is half of the screen height.
+ ---------------------------------------------------------------------------
+
+                          [1mSEARCHING[0m
+
+[7mHELP -- Press RETURN for more, or q when done[27m[K[K  /[4mpattern[24m          *  Search forward for ([4mN[24m-th) matching line.
+[7mHELP -- Press RETURN for more, or q when done[27m[K[K[H[2J[H  ?[4mpattern[24m          *  Search backward for ([4mN[24m-th) matching line.
+  n                 *  Repeat previous search (for [4mN[24m-th occurrence).
+  N                 *  Repeat previous search in reverse direction.
+  ESC-n             *  Repeat previous search, spanning files.
+  ESC-N             *  Repeat previous search, reverse dir. & spanning files.
+  ESC-u                Undo (toggle) search highlighting.
+  &[4mpattern[24m          *  Display only matching lines
+        ---------------------------------------------------
+        A search pattern may be preceded by one or more of:
+        ^N or !  Search for NON-matching lines.
+        ^E or *  Search multiple files (pass thru END OF FILE).
+        ^F or @  Start search at FIRST file (for /) or last file (for ?).
+        ^K       Highlight matches, but don't move (KEEP position).
+        ^R       Don't use REGULAR EXPRESSIONS.
+ ---------------------------------------------------------------------------
+
+                           [1mJUMPING[0m
+
+  g  <  ESC-<       *  Go to first line in file (or line [4mN[24m).
+  G  >  ESC->       *  Go to last line in file (or line [4mN[24m).
+  p  %              *  Go to beginning of file (or [4mN[24m percent into file).
+  t                 *  Go to the ([4mN[24m-th) next tag.
+  T                 *  Go to the ([4mN[24m-th) previous tag.
+  {  (  [           *  Find close bracket } ) ].
+  }  )  ]           *  Find open bracket { ( [.
+  ESC-^F [4m<c1>[24m [4m<c2>[24m  *  Find close bracket [4m<c2>[24m.
+  ESC-^B [4m<c1>[24m [4m<c2>[24m  *  Find open bracket [4m<c1>[24m 
+        ---------------------------------------------------
+        Each "find close bracket" command goes forward to the close bracket 
+          matching the ([4mN[24m-th) open bracket in the top line.
+        Each "find open bracket" command goes backward to the open bracket 
+          matching the ([4mN[24m-th) close bracket in the bottom line.
+
+  m[4m<letter>[24m            Mark the current position with <letter>.
+  '[4m<letter>[24m            Go to a previously marked position.
+  ''                   Go to the previous position.
+  ^X^X                 Same as '.
+[7mHELP -- Press RETURN for more, or q when done[27m[K[K-[Klog file: [Khh[Koo[Kww[K  [Kpp[Khh[Kpp[K--[Kcc[Kll[Kii[Kss[Kuu[Kdd[Koo[K  [Kaa[Kpp[Ktt[K--[Kgg[Kee[Ktt[K  [Kii[Knn[Kss[Ktt[Kaa[Kll[Kll[K  [Kpp[Khh[Kpp[K--[Kcc[Kll[Kii[K[K[7mHELP -- Press RETURN for more, or q when done[27m[K[K[7mFinishing logfile... (interrupt to abort)[27m[K[H[2J[H[H[2J[Hlibnet-libidn-perl - Perl bindings for GNU Libidn
+php-all-dev - package depending on all supported PHP development packages
+php-cgi - server-side, HTML-embedded scripting language (CGI binary) (default)
+php-cli - command-line interpreter for the PHP scripting language (default)
+php-common - Common files for PHP packages
+php-curl - CURL module for PHP [default]
+php-dev - Files for PHP module development (default)
+php-gd - GD module for PHP [default]
+php-gmp - GMP module for PHP [default]
+php-ldap - LDAP module for PHP [default]
+php-mysql - MySQL module for PHP [default]
+php-odbc - ODBC module for PHP [default]
+php-pear - PEAR Base System
+php-pgsql - PostgreSQL module for PHP [default]
+php-pspell - pspell module for PHP [default]
+php-recode - recode module for PHP [default]
+php-snmp - SNMP module for PHP [default]
+php-sqlite3 - SQLite3 module for PHP [default]
+php-tidy - tidy module for PHP [default]
+php-xmlrpc - XMLRPC-EPI module for PHP [default]
+php7.2-cgi - server-side, HTML-embedded scripting language (CGI binary)
+php7.2-cli - command-line interpreter for the PHP scripting language
+php7.2-common - documentation, examples and common module for PHP
+php7.2-curl - CURL module for PHP
+php7.2-gd - GD module for PHP
+php7.2-gmp - GMP module for PHP
+php7.2-json - JSON module for PHP
+php7.2-ldap - LDAP module for PHP
+php7.2-mysql - MySQL module for PHP
+php7.2-odbc - ODBC module for PHP
+php7.2-opcache - Zend OpCache module for PHP
+php7.2-pgsql - PostgreSQL module for PHP
+php7.2-pspell - pspell module for PHP
+php7.2-readline - readline module for PHP
+php7.2-recode - recode module for PHP
+php7.2-snmp - SNMP module for PHP
+php7.2-sqlite3 - SQLite3 module for PHP
+:[K[K[?1l>[?1049l[23;0;0t
+[2]+  Stopped                 apt-cache search php- | less
+]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ [K]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ [K]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ sudo nano /var/www/html/info.php
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[49m(B[m[H[2J[36;66H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 2.9.3                                               /var/www/html/info.php                                                         [1;141H(B[m[37d(B[0;7m^G(B[m Get Help    (B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut Text    (B[0;7m^J(B[m Justify     (B[0;7m^C(B[m Cur Pos     (B[0;7mM-U(B[m Undo[106G(B[0;7mM-A(B[m Mark Text  (B[0;7mM-](B[m To Bracket[38d(B[0;7m^X(B[m Exit[38;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Uncut Text  (B[0;7m^T(B[m To Spell    (B[0;7m^_(B[m Go To Line  (B[0;7mM-E(B[m Redo[106G(B[0;7mM-6(B[m Copy Text  (B[0;7mM-W(B[m WhereIs Next[36d[3d[49m(B[m[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>[?1049h[22;0;0t[1;38r[?12l[?25h[39;49m]104(B[m[4l[?7h[H[2J(B[0;7m  GNU nano 2.9.3                                               /var/www/html/info.php                                                         [36;66H[ New File ][37d^G(B[m Get Help    (B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut Text    (B[0;7m^J(B[m Justify     (B[0;7m^C(B[m Cur Pos     (B[0;7mM-U(B[m Undo[106G(B[0;7mM-A(B[m Mark Text  (B[0;7mM-](B[m To Bracket[38d(B[0;7m^X(B[m Exit[38;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Uncut Text  (B[0;7m^T(B[m To Spell    (B[0;7m^_(B[m Go To Line  (B[0;7mM-E(B[m Redo[106G(B[0;7mM-6(B[m Copy Text  (B[0;7mM-W(B[m WhereIs Next[3d[?1h=[?1h=[?1h=[H[2J(B[0;7m  GNU nano 2.9.3                                               /var/www/html/info.php                                                         [37d(B[m[1;64H(B[0;7m    /var/www/html/info.php[143G        [1;149H(B[m[37d(B[0;7m^G(B[m Get Help     (B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut Text     (B[0;7m^J(B[m Justify[81G(B[0;7m^C(B[m Cur Pos[97G(B[0;7mM-U(B[m Undo[37;113H(B[0;7mM-A(B[m Mark Text   (B[0;7mM-](B[m To Bracket[38d(B[0;7m^X(B[m Exit[38;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Uncut Text   (B[0;7m^T(B[m To Spell     (B[0;7m^_(B[m Go To Line   (B[0;7mM-E(B[m Redo[38;113H(B[0;7mM-6(B[m Copy Text   (B[0;7mM-W(B[m WhereIs Next[36d[?25l[3d[?12l[?25h[?25l[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>[?1049h[22;0;0t[1;38r[?12l[?25h[39;49m]104(B[m[4l[?7h[H[2J(B[0;7m  GNU nano 2.9.3                                                   /var/www/html/info.php                                                     [37;1H^G(B[m Get Help     (B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut Text     (B[0;7m^J(B[m Justify[81G(B[0;7m^C(B[m Cur Pos[97G(B[0;7mM-U(B[m Undo[37;113H(B[0;7mM-A(B[m Mark Text   (B[0;7mM-](B[m To Bracket[38;1H(B[0;7m^X(B[m Exit[38;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Uncut Text   (B[0;7m^T(B[m To Spell     (B[0;7m^_(B[m Go To Line   (B[0;7mM-E(B[m Redo[38;113H(B[0;7mM-6(B[m Copy Text   (B[0;7mM-W(B[m WhereIs N[?7le[?7h[3d[?1h=[?1h=[?1h=[H[2J(B[0;7m  GNU nano 2.9.3                                                   /var/www/html/info.php                                                     [37;1H(B[m[1;64H(B[0;7m/var/www/html/info.php    [141G(B[m[37d(B[0;7m^G(B[m Get Help    (B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut Text    (B[0;7m^J(B[m Justify     (B[0;7m^C(B[m Cur Pos     (B[0;7mM-U(B[m Undo[106G(B[0;7mM-A(B[m Mark Text  (B[0;7mM-](B[m To Bracket[38d(B[0;7m^X(B[m Exit[38;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Uncut Text  (B[0;7m^T(B[m To Spell    (B[0;7m^_(B[m Go To Line  (B[0;7mM-E(B[m Redo[106G(B[0;7mM-6(B[m Copy Text  (B[0;7mM-W(B[m WhereIs Next[36d[?25l[3d[?12l[?25h[?25l[?12l[?25h[?25l[1;133H(B[0;7mModified(B[m[3d(B[0;1m[32m<?php[4d[39m(B[mphpinfo ();[5d(B[0;1m[32m?>[39m(B[m[?12l[?25h[?25l[36d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)                                                                                 [37;1H Y(B[m Yes[K[38d(B[0;7m N(B[m No  [38;16H (B[0;7m^C(B[m Cancel[K[36;63H[?12l[?25h[?25l[37d(B[0;7m^G(B[m Get Help[37;36H(B[0;7mM-D(B[m DOS Format[37;71H(B[0;7mM-A(B[m Append[37;106H(B[0;7mM-B(B[m Backup File[38d(B[0;7m^C(B[m Cancel[17G         [38;36H(B[0;7mM-M(B[m Mac Format[38;71H(B[0;7mM-P(B[m Prepend[38;106H(B[0;7m^T(B[m To Files[36d(B[0;7mFile Name to Write: /var/www/html/info.php                   (B[m[36;43H[?12l[?25h[?25l[K[1;141H[1;133H(B[0;7m        (B[m[36;63H(B[0;7m[ Wrote 3 lines ](B[m[J[38;142H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ [K]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ [K]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ [K]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ [K]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ [K]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ [K]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ [K]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ [K]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ [K]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ sudo apt-get install mysql-server
+[sudo] password for vishwanath: 
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 1%Reading state information... Done
+mysql-server is already the newest version (5.7.29-0ubuntu0.18.04.1).
+0 upgraded, 0 newly installed, 0 to remove and 282 not upgraded.
+]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ [K]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ [K]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ sudo apt-get install php libapache2-mod-php php-mysql 
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 1%Reading state information... Done
+libapache2-mod-php is already the newest version (1:7.2+60ubuntu1).
+php is already the newest version (1:7.2+60ubuntu1).
+php-mysql is already the newest version (1:7.2+60ubuntu1).
+0 upgraded, 0 newly installed, 0 to remove and 282 not upgraded.
+]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ sudo nano /etc/apache2/mods-enabled/dir.conf
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;64H(B[0;7m[ Reading File ](B[m[36;70H(B[0;7m 5 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                                         /etc/apache2/mods-enabled/dir.conf                                                   [1;141H(B[m[37d(B[0;7m^G(B[m Get Help    (B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut Text    (B[0;7m^J(B[m Justify     (B[0;7m^C(B[m Cur Pos     (B[0;7mM-U(B[m Undo[106G(B[0;7mM-A(B[m Mark Text  (B[0;7mM-](B[m To Bracket[38d(B[0;7m^X(B[m Exit[38;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Uncut Text  (B[0;7m^T(B[m To Spell    (B[0;7m^_(B[m Go To Line  (B[0;7mM-E(B[m Redo[106G(B[0;7mM-6(B[m Copy Text  (B[0;7mM-W(B[m WhereIs Next[36d[3d[39;49m(B[m<IfModule mod_dir.c>[4;9HDirectoryIndex index.php index.html index.cgi index.pl  index.xhtml index.htm[5d</IfModule>[7d[36m# vim: syntax=apache ts=4 sw=4 sts=4 sr noet[3d[39m(B[m[?12l[?25h[?25l[36d[J[38;142H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ sudo systemctl restart apache2
+]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ sudo nano /var/www/html/info.php
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[49m(B[m[H[2J[36;64H(B[0;7m[ Reading File ](B[m[36;70H(B[0;7m 3 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                                               /var/www/html/info.php                                                         [1;141H(B[m[37d(B[0;7m^G(B[m Get Help    (B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut Text    (B[0;7m^J(B[m Justify     (B[0;7m^C(B[m Cur Pos     (B[0;7mM-U(B[m Undo[106G(B[0;7mM-A(B[m Mark Text  (B[0;7mM-](B[m To Bracket[38d(B[0;7m^X(B[m Exit[38;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Uncut Text  (B[0;7m^T(B[m To Spell    (B[0;7m^_(B[m Go To Line  (B[0;7mM-E(B[m Redo[106G(B[0;7mM-6(B[m Copy Text  (B[0;7mM-W(B[m WhereIs Next[36d[3d(B[0;1m[32m<?php[4d[39m(B[mphpinfo ();[5d(B[0;1m[32m?>[3d[39m(B[m[?12l[?25h[?25l[37;16H[20X[37;36H(B[0;7mM-D(B[m DOS Format[21X[37;71H(B[0;7mM-A(B[m Append[18X[37;108H(B[0;7mB(B[m Backup File[K[38;2H(B[0;7mC(B[m Cancel[16G[20X[38;36H(B[0;7mM-M(B[m Mac Format[21X[38;71H(B[0;7mM-P(B[m Prepend[17X[38;106H(B[0;7m^T(B[m To Files[K[36d(B[0;7mFile Name to Write: /var/www/html/info.php                                                                                                    [36;1H(B[m[36;43H[?12l[?25h[?25l[K[1;141H[36;63H(B[0;7m[ Wrote 3 lines ](B[m[37;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut Text    (B[0;7m^J(B[m Justify     (B[0;7m^C(B[m Cur Pos     (B[0;7mM-U(B[m Undo[37;108H(B[0;7mA(B[m Mark Text  (B[0;7mM-](B[m To Bracket[38;2H(B[0;7mX(B[m Exit  [16G(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Uncut Text  (B[0;7m^T(B[m To Spell    (B[0;7m^_(B[m Go To Line  (B[0;7mM-E(B[m Redo[106G(B[0;7mM-6(B[m Copy Text  (B[0;7mM-W(B[m WhereIs Next[36d[3d[?12l[?25h[?25l[36d[J[38;142H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ sudo nano /var/www/html/info.php[2Psystemctl restart apache2nano /etc/apache2/mods-enabled/dir.conf
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[49m(B[m[H[2J[36;64H(B[0;7m[ Reading File ](B[m[36;70H(B[0;7m 5 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                                         /etc/apache2/mods-enabled/dir.conf                                                   [1;141H(B[m[37d(B[0;7m^G(B[m Get Help    (B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut Text    (B[0;7m^J(B[m Justify     (B[0;7m^C(B[m Cur Pos     (B[0;7mM-U(B[m Undo[106G(B[0;7mM-A(B[m Mark Text  (B[0;7mM-](B[m To Bracket[38d(B[0;7m^X(B[m Exit[38;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Uncut Text  (B[0;7m^T(B[m To Spell    (B[0;7m^_(B[m Go To Line  (B[0;7mM-E(B[m Redo[106G(B[0;7mM-6(B[m Copy Text  (B[0;7mM-W(B[m WhereIs Next[36d[3d[49m(B[m<IfModule mod_dir.c>[4;9HDirectoryIndex index.php index.html index.cgi index.pl  index.xhtml index.htm[5d</IfModule>[7d[36m# vim: syntax=apache ts=4 sw=4 sts=4 sr noet[3d[39m(B[m[?12l[?25h[?25l[37;16H[20X[37;36H(B[0;7mM-D(B[m DOS Format[21X[37;71H(B[0;7mM-A(B[m Append[18X[37;108H(B[0;7mB(B[m Backup File[K[38;2H(B[0;7mC(B[m Cancel[16G[20X[38;36H(B[0;7mM-M(B[m Mac Format[21X[38;71H(B[0;7mM-P(B[m Prepend[17X[38;106H(B[0;7m^T(B[m To Files[K[36d(B[0;7mFile Name to Write: /etc/apache2/mods-enabled/dir.conf                                                                                        [36;1H(B[m[36;55H[?12l[?25h[?25l[K[1;141H[36;63H(B[0;7m[ Wrote 5 lines ](B[m[37;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut Text    (B[0;7m^J(B[m Justify     (B[0;7m^C(B[m Cur Pos     (B[0;7mM-U(B[m Undo[37;108H(B[0;7mA(B[m Mark Text  (B[0;7mM-](B[m To Bracket[38;2H(B[0;7mX(B[m Exit  [16G(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Uncut Text  (B[0;7m^T(B[m To Spell    (B[0;7m^_(B[m Go To Line  (B[0;7mM-E(B[m Redo[106G(B[0;7mM-6(B[m Copy Text  (B[0;7mM-W(B[m WhereIs Next[36d[3d[?12l[?25h[?25l[36d[J[38;142H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ sudo nano /etc/apache2/mods-enabled/dir.conf[12Pvar/www/html/info.php[2Psystemctl restart apache2
+]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ sudo systemctl restart apache2nano /etc/apache2/mods-enabled/dir.conf[12Pvar/www/html/info.php
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;64H(B[0;7m[ Reading File ](B[m[36;70H(B[0;7m 3 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                                               /var/www/html/info.php                                                         [1;141H(B[m[37d(B[0;7m^G(B[m Get Help    (B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut Text    (B[0;7m^J(B[m Justify     (B[0;7m^C(B[m Cur Pos     (B[0;7mM-U(B[m Undo[106G(B[0;7mM-A(B[m Mark Text  (B[0;7mM-](B[m To Bracket[38d(B[0;7m^X(B[m Exit[38;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Uncut Text  (B[0;7m^T(B[m To Spell    (B[0;7m^_(B[m Go To Line  (B[0;7mM-E(B[m Redo[106G(B[0;7mM-6(B[m Copy Text  (B[0;7mM-W(B[m WhereIs Next[36d[3d(B[0;1m[32m<?php[4d[39m(B[mphpinfo ();[5d(B[0;1m[32m?>[3d[39m(B[m[?12l[?25h[?25l[37;16H[20X[37;36H(B[0;7mM-D(B[m DOS Format[21X[37;71H(B[0;7mM-A(B[m Append[18X[37;108H(B[0;7mB(B[m Backup File[K[38;2H(B[0;7mC(B[m Cancel[16G[20X[38;36H(B[0;7mM-M(B[m Mac Format[21X[38;71H(B[0;7mM-P(B[m Prepend[17X[38;106H(B[0;7m^T(B[m To Files[K[36d(B[0;7mFile Name to Write: /var/www/html/info.php                                                                                                    [36;1H(B[m[36;43H[?12l[?25h[?25l[K[1;141H[36;63H(B[0;7m[ Wrote 3 lines ](B[m[37;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut Text    (B[0;7m^J(B[m Justify     (B[0;7m^C(B[m Cur Pos     (B[0;7mM-U(B[m Undo[37;108H(B[0;7mA(B[m Mark Text  (B[0;7mM-](B[m To Bracket[38;2H(B[0;7mX(B[m Exit  [16G(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Uncut Text  (B[0;7m^T(B[m To Spell    (B[0;7m^_(B[m Go To Line  (B[0;7mM-E(B[m Redo[106G(B[0;7mM-6(B[m Copy Text  (B[0;7mM-W(B[m WhereIs Next[36d[3d[?12l[?25h[?25l[36d[J[38;142H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ [K]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ [K]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ [K]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ [K]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ [K]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ [K]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ [K]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ [K]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ [K]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ [K]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ [K]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ [K]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ [K]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ [K]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ [K]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ [K]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ [K]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ [K]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ [K]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ [K]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ [K]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ [K]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ [K]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ [K]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ [K]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ [K]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ [K]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ [K]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ [K]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ [K]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ [K]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ [K]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ [K]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ [K]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ [K]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ [K]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ [K]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ [K]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ [K]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ [K]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ [K]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ [K]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ [K]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ [K]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ [K]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ [K]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ [K]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ [K]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ [K]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ [K]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ [K]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ [K]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ [K]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ [K]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ [K]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ [K]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ [K]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ [K]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ [K]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ exit
+exit
+There are stopped jobs.
+]0;vishwanath@vishwanath-HP-348-G4: ~/2503[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/2503[00m$ cs18c61@[4Pexitsudo nano /var/www/html/info.php[2Psystemctl restart apache2nano /etc/apache2/mods-enabled/dir.conf[12Pvar/www/html/info.php[2Psystemctl restart apache2nano /etc/apache2/mods-enabled/dir.confapt-get install php libapache2-mod-php php-mysql [21Pmysql-server[1Pnano /var/www/html/info.php[4Papt-cache search php- | lesssudo systemctl restart apache2nano /etc/apache2/mods-enabled/dir.confapt-get install php libapache2-mod-php php-mysql [21Pmysql-server[2Pufw app info 'Apache Full'“Apache Full”list[Kservice apache2 statusapt-get install apache2[9Pupdatewget https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.4.1.tar.sign[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[
