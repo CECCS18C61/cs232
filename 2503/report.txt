@@ -1,0 +1,79 @@
+CEC CS 18 C61
+Vishwanath R Athrey
+
+--------------------------------
+#1: Aim/task:- Task 8- 3.LAMP Stack
+---------------------------------
+Command/Shell script/Program name
+------------------------------------
+
+1: Update Package Repository Cache
+     $ sudo apt-get update
+
+2: Install Apache
+  1. To install Apache
+     $ sudo apt-get install apache2
+   
+  2. To check weather Apache is installed correctly
+     $ sudo service apache2 status
+
+  3. To make sure that the UFW firewall has an application profile for Apache 
+     $ sudo ufw app list
+ 
+  4. In the Apache Full profile, make sure it allows the traffic on ports 80 and 443
+     $ sudo ufw app info 'Apache Full'
+
+3: Install MySQL and Create a Database
+     $ sudo apt-get install mysql-server
+
+4: Install PHP
+     $ sudo apt-get install php libapache2-mod-php php-mysql 
+
+5: Next you should modify the way Apache serves files when directories are requested.
+   By default,  Apache first looks for a file card named index.html. 
+   However, we want it to look for the index.php file instead.
+   To change this, open the dir.conf file in a text editor with root privileges:
+     $ sudo nano /etc/apache2/mods-enabled/dir.conf
+
+6: Restart Apache
+     $ sudo systemctl restart apache2
+
+7: Install PHP Modules
+     $ apt-cache search php- | less
+     $ apt-cache show php-cli
+     $ sudo apt-get install php-cli
+
+8: Test PHP Processing on Web Server
+     $ sudo nano /var/www/html/info.php
+---------------------------------
+
+Input: (If relevant)
+---------------
+1: php file for showing version info
+	info.php
+	
+2: php file hosted in local host
+	index.php	
+--------------------------------
+Output: or Input & Output (whichever is applicable)
+
+
+-------------------
+Remarks if any:
+
+
+
+
+
+-------------------------------------
+-------------------------------------
+#2:
+
+#3:
+
+#4:
+
+#5:
+
+
+
