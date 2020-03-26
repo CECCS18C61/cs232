@@ -1,0 +1,65 @@
+CEC CS 18 C61 
+Vishwanath R Athrey
+
+---------------------------------
+
+#1: Package management (t8)(1)
+---------------------------------
+
+Command/Shell script/Program name
+---------------------------------
+		
+1. Install a package
+            $ sudo apt install nmap
+       
+2. Remove a Package
+            $ sudo apt remove nmap
+        
+3. Update list of available packages
+            $ sudo apt update
+
+4. Upgrade Package
+            $ sudo apt upgrade
+
+5. To install tasksel 
+	    $ sudo apt-get install tasksel
+
+6. To remove tasksel 
+	    $ sudo apt remove tasksel
+	
+7. To install apache2 
+	    $ sudo apt-get install apache2
+	
+8. To access the same prompts on installation 
+	    $ sudo dpkg-reconfigure apache2
+
+9. To get information about packages installed with apache2 
+	    $ apt-get install -s apache2
+
+10. To remove all dependencies no longer required 
+	    $ sudo apt-get autoremove
+
+11. List all installed packages
+	    $ sudo apt list > packages.txt 
+                      
+                        OR
+             
+            $ apt list --installed  
+
+--------------------------------
+Input: 
+
+	
+
+--------------------------------
+Output: 
+	
+	- List of installed packages : packages.txt
+
+-------------------
+Remarks if any:
+	
+	
+
+-------------------------------------
+-------------------------------------
