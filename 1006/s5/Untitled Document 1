@@ -1,0 +1,43 @@
+CEC CS 18 C61
+Vishwanath R Athrey
+
+
+--------------------------------
+#1:  Aim/task
+
+S5
+---------------------------------
+Command/Shell script/Program name
+
+
+shell programming:shell script to show various system configurations
+
+
+---------------------------------
+
+Input: (If relevant)
+---------------
+
+#Commands
+1.cat /etc/os-release                      /*OS info
+2.uname -r                                /*kernel version
+3.cat /etc/shells                        /*available shells
+4.lscpu                                 /*CPU info
+5.lshw -class disk -class storage      /*Hard disk info
+6.cat /proc/mounts                    /*Files mounted
+7.cat /proc/meminfo                  /*Memory info
+
+--------------------------------
+Output: or Input & Output (whichever is applicable)
+
+
+
+Displaying various system configurations
+
+-------------------
+Remarks if any:
+
+
+------------------------------
+------------------------------------------
+

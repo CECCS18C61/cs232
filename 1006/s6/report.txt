@@ -1,0 +1,43 @@
+
+CEC CS 18 C61   
+Vishwanath R Athrey  
+
+
+-----------------------------------------------
+#1: Menu driven calculator (s6)
+---------------------------------
+
+Command/Shell script/Program name
+---------------------------------
+		
+	s6.sh
+
+--------------------------------
+Output: 
+
+	A menu driven calculator with following functions :
+
+		1.  Addition 
+		2.  Subtraction 
+		3.  Multiplication 
+		4.  Division 
+		5.  Modulus 
+	
+-------------------
+Remarks if any:
+
+	
+-------------------------------------
+------------------------------------
+
+    © 2020 GitHub, Inc.
+    Terms
+    Privacy
+    Security
+    Status
+    Help
+
+Contact GitHub
+Pricing
+API
+

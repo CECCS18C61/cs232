@@ -1,0 +1,206 @@
+Script started on 2020-06-10 14:37:44+0530
+]0;vishwanath@vishwanath-HP-348-G4: ~/1006/s5[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/1006/s5[00m$ nano s5.sh
+[?1049h[22;0;0t[1;24r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[22;35H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 2.9.3                        s5.sh                                   [1;79H(B[m[23d(B[0;7m^G(B[m Get Help  (B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Uncut Text(B[0;7m^T(B[m To Linter (B[0;7m^_(B[m Go To Line[22d[3d[39;49m(B[m[?12l[?25h[?25l[1;71H(B[0;7mModified(B[m[3d(B[0;1m[34mcat[39m(B[m /proc/meminfo[4d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m""[5d[34mecho[39m(B[m (B[0;1m[33m""[8d[34mecho[39m(B[m (B[0;1m[33m"File system information:"[9d[34mcat[39m(B[m /proc/mounts[10d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m""[11d[34mecho[39m(B[m (B[0;1m[33m""[13;5H[39m(B[m© 2020 GitHub, Inc.[14;5HTerms[15;5HPrivacy[16;5HSecurity[17;5HStatus[18;5HHelp[22d[K[20d[?12l[?25h[?25l[A[?12l[?25h[?25l[18;9H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l[42m    [49m(B[m[K[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l[K[?12l[?25h[?25l[17;11H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l[42m    [49m(B[m[K[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l[K[?12l[?25h[?25l[16;13H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l[42m    [49m(B[m[K[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l[K[?12l[?25h[?25l[15;12H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l[42m    [49m(B[m[K[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l[K[?12l[?25h[?25l[14;10H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l[42m    [49m(B[m[K[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l[K[?12l[?25h[?25l[13;24H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l[42m [49m(B[m[K[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l[42m [49m(B[m[K[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l[42m [49m(B[m[K[?12l[?25h[?25l [?12l[?25h[?25l[42m    [49m(B[m[K[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l[K[?12l[?25h[?25l[A[?12l[?25h[?25l[11;8H[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[5;8H[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[2;22r[2;1H[10T[1;24r[3;1Hlscpu[4d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m""[5d[34mecho[39m(B[m (B[0;1m[33m""[7d[34mecho[39m(B[m (B[0;1m[33m"Hard disk information:"[8d[39m(B[mlshw -class disk -class storage[9d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m""[10d[34mecho[39m(B[m (B[0;1m[33m""[12d[34mecho[39m(B[m (B[0;1m[33m"Memory information:"[8G[39m(B[m[?12l[?25h[?25l[A[?12l[?25h[?25l[10;8H[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[5;8H[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[2;21r[2;1H[10T[1;24r[3;1H(B[0;1m[34mecho[39m(B[m (B[0;1m[33m""[4d[34mecho[39m(B[m (B[0;1m[33m""[7d[34mecho[39m(B[m (B[0;1m[33m"All available shells:"[8d[34mcat[39m(B[m /etc/shells[9d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m""[10d[34mecho[39m(B[m (B[0;1m[33m""[12d[34mecho[39m(B[m (B[0;1m[33m"CPU information:"[8G[39m(B[m[?12l[?25h[?25l[A[?12l[?25h[?25l[10;8H[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[4;8H[?12l[?25h[?25l[A[?12l[?25h[?25l[2;21r[2;1H[10T[1;24r[3;1H[36m#!/bin/bash[5d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Your OS information:"[6d[34mcat[39m(B[m /etc/os-release[7d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m""[8d[34mecho[39m(B[m (B[0;1m[33m""[11d[34mecho[39m(B[m (B[0;1m[33m"Kernel version:"[12d[39m(B[muname [32m-r[39m(B[m[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[8;8H[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[3;8H[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l[K[?12l[?25h[?25l[23;14H       (B[0;7mM-D(B[m DOS Format      (B[0;7mM-A(B[m Append          (B[0;7mM-B(B[m Backup File[24;2H(B[0;7mC(B[m Cancel           (B[0;7mM-M(B[m Mac Format      (B[0;7mM-P(B[m Prepend         (B[0;7m^T(B[m To Files[K[22d(B[0;7mFile Name to Write: s5.sh                                                       [22;1H(B[m[22;26H[?12l[?25h[?25l[K[1;79H[1;71H(B[0;7m        (B[m[22;32H(B[0;7m[ Wrote 39 lines ](B[m[23;14H(B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24;2H(B[0;7mX(B[m Exit      (B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Uncut Text(B[0;7m^T(B[m To Linter (B[0;7m^_(B[m Go To Line[22d[3d[?12l[?25h[?25l[22d[J[24;80H[?12l[?25h[24;1H[?1049l[23;0;0t[?1l>]0;vishwanath@vishwanath-HP-348-G4: ~/1006/s5[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/1006/s5[00m$ nano s5.shscript work.txt[10Pcd s4s[C[C[C[3@mkdir[C[C[Cscript work.txt[8Pcd 1006[3@mkdir[C[C[C[C[C[6Pexit./shellscript.shchmod +x shellscript.sh[1P.sh[1P.sh[1P.sh[1P.sh[1P.sh[1P.sh[1P.sh[1P.sh[1P.sh[1P.sh5.sh[C[C[C
+]0;vishwanath@vishwanath-HP-348-G4: ~/1006/s5[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/1006/s5[00m$ chmod +x s5.sh.s5.sh/s5.sh[1P./s5.sh[1P./s5.sh[1P./s5.sh[1P./s5.sh[1P./s5.sh[1P./s5.sh[1P./s5.sh[1P./s5.sh[1P./s5.sh[C[C[C[C[C[C[C
+Your OS information:
+NAME="Ubuntu"
+VERSION="18.04.4 LTS (Bionic Beaver)"
+ID=ubuntu
+ID_LIKE=debian
+PRETTY_NAME="Ubuntu 18.04.4 LTS"
+VERSION_ID="18.04"
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+VERSION_CODENAME=bionic
+UBUNTU_CODENAME=bionic
+
+
+Kernel version:
+5.3.0-46-generic
+
+
+All available shells:
+# /etc/shells: valid login shells
+/bin/sh
+/bin/bash
+/bin/rbash
+/bin/dash
+
+
+CPU information:
+Architecture:        x86_64
+CPU op-mode(s):      32-bit, 64-bit
+Byte Order:          Little Endian
+CPU(s):              4
+On-line CPU(s) list: 0-3
+Thread(s) per core:  2
+Core(s) per socket:  2
+Socket(s):           1
+NUMA node(s):        1
+Vendor ID:           GenuineIntel
+CPU family:          6
+Model:               142
+Model name:          Intel(R) Core(TM) i5-7200U CPU @ 2.50GHz
+Stepping:            9
+CPU MHz:             800.102
+CPU max MHz:         3100.0000
+CPU min MHz:         400.0000
+BogoMIPS:            5399.81
+Virtualization:      VT-x
+L1d cache:           32K
+L1i cache:           32K
+L2 cache:            256K
+L3 cache:            3072K
+NUMA node0 CPU(s):   0-3
+Flags:               fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb invpcid_single pti ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt intel_pt xsaveopt xsavec xgetbv1 xsaves dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp md_clear flush_l1d
+
+
+Hard disk information:
+WARNING: you should run this program as super-user.
+DMI   SMP   PA-RISC       device-tree           SPD   memory      /proc/cpuinfo             CPUID     PCI (sysfs)           ISA PnP       PCMCIA      PCMCIA      Virtual I/O (VIRTIO) devices                            kernel device tree (sysfs)                          USB   IDE   SCSI    Network interfaces                  Framebuffer devices                   Display       CPUFreq       ABI     *-storage
+       description: SATA controller
+       product: Sunrise Point-LP SATA Controller [AHCI mode]
+       vendor: Intel Corporation
+       physical id: 17
+       bus info: pci@0000:00:17.0
+       version: 21
+       width: 32 bits
+       clock: 66MHz
+       capabilities: storage ahci_1.0 bus_master cap_list
+       configuration: driver=ahci latency=0
+       resources: irq:125 memory:b1230000-b1231fff memory:b1237000-b12370ff ioport:4080(size=8) ioport:4088(size=4) ioport:4060(size=32) memory:b1235000-b12357ff
+  *-scsi
+       physical id: 2
+       logical name: scsi1
+       capabilities: emulated
+     *-cdrom
+          description: DVD-RAM writer
+          product: DVDRW GUD1N
+          vendor: hp
+          physical id: 0.0.0
+          bus info: scsi@1:0.0.0
+          logical name: /dev/cdrom
+          logical name: /dev/cdrw
+          logical name: /dev/dvd
+          logical name: /dev/dvdrw
+          logical name: /dev/sr0
+          version: MD00
+          capabilities: removable audio cd-r cd-rw dvd dvd-r dvd-ram
+          configuration: ansiversion=5 status=nodisc
+WARNING: output may be incomplete or inaccurate, you should run this program as super-user.
+
+
+Memory information:
+MemTotal:        8068388 kB
+MemFree:         2824456 kB
+MemAvailable:    5708692 kB
+Buffers:           50824 kB
+Cached:          3097604 kB
+SwapCached:            0 kB
+Active:          2723572 kB
+Inactive:        1938020 kB
+Active(anon):    1644080 kB
+Inactive(anon):    95616 kB
+Active(file):    1079492 kB
+Inactive(file):  1842404 kB
+Unevictable:      128796 kB
+Mlocked:              96 kB
+SwapTotal:       1858440 kB
+SwapFree:        1858440 kB
+Dirty:               336 kB
+Writeback:             0 kB
+AnonPages:       1642148 kB
+Mapped:           516388 kB
+Shmem:            226524 kB
+KReclaimable:     271064 kB
+Slab:             325988 kB
+SReclaimable:     271064 kB
+SUnreclaim:        54924 kB
+KernelStack:       10880 kB
+PageTables:        41748 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:     5892632 kB
+Committed_AS:    5748256 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:       35404 kB
+VmallocChunk:          0 kB
+Percpu:             1440 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:         0 kB
+ShmemHugePages:        0 kB
+ShmemPmdMapped:        0 kB
+CmaTotal:              0 kB
+CmaFree:               0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+Hugetlb:               0 kB
+DirectMap4k:      214644 kB
+DirectMap2M:     7041024 kB
+DirectMap1G:     1048576 kB
+
+
+File system information:
+sysfs /sys sysfs rw,nosuid,nodev,noexec,relatime 0 0
+proc /proc proc rw,nosuid,nodev,noexec,relatime 0 0
+udev /dev devtmpfs rw,nosuid,relatime,size=4009852k,nr_inodes=1002463,mode=755 0 0
+devpts /dev/pts devpts rw,nosuid,noexec,relatime,gid=5,mode=620,ptmxmode=000 0 0
+tmpfs /run tmpfs rw,nosuid,noexec,relatime,size=806840k,mode=755 0 0
+/dev/sda10 / ext4 rw,relatime,errors=remount-ro 0 0
+securityfs /sys/kernel/security securityfs rw,nosuid,nodev,noexec,relatime 0 0
+tmpfs /dev/shm tmpfs rw,nosuid,nodev 0 0
+tmpfs /run/lock tmpfs rw,nosuid,nodev,noexec,relatime,size=5120k 0 0
+tmpfs /sys/fs/cgroup tmpfs ro,nosuid,nodev,noexec,mode=755 0 0
+cgroup /sys/fs/cgroup/unified cgroup2 rw,nosuid,nodev,noexec,relatime,nsdelegate 0 0
+cgroup /sys/fs/cgroup/systemd cgroup rw,nosuid,nodev,noexec,relatime,xattr,name=systemd 0 0
+pstore /sys/fs/pstore pstore rw,nosuid,nodev,noexec,relatime 0 0
+efivarfs /sys/firmware/efi/efivars efivarfs rw,nosuid,nodev,noexec,relatime 0 0
+cgroup /sys/fs/cgroup/freezer cgroup rw,nosuid,nodev,noexec,relatime,freezer 0 0
+cgroup /sys/fs/cgroup/net_cls,net_prio cgroup rw,nosuid,nodev,noexec,relatime,net_cls,net_prio 0 0
+cgroup /sys/fs/cgroup/rdma cgroup rw,nosuid,nodev,noexec,relatime,rdma 0 0
+cgroup /sys/fs/cgroup/hugetlb cgroup rw,nosuid,nodev,noexec,relatime,hugetlb 0 0
+cgroup /sys/fs/cgroup/devices cgroup rw,nosuid,nodev,noexec,relatime,devices 0 0
+cgroup /sys/fs/cgroup/cpu,cpuacct cgroup rw,nosuid,nodev,noexec,relatime,cpu,cpuacct 0 0
+cgroup /sys/fs/cgroup/pids cgroup rw,nosuid,nodev,noexec,relatime,pids 0 0
+cgroup /sys/fs/cgroup/cpuset cgroup rw,nosuid,nodev,noexec,relatime,cpuset 0 0
+cgroup /sys/fs/cgroup/blkio cgroup rw,nosuid,nodev,noexec,relatime,blkio 0 0
+cgroup /sys/fs/cgroup/memory cgroup rw,nosuid,nodev,noexec,relatime,memory 0 0
+cgroup /sys/fs/cgroup/perf_event cgroup rw,nosuid,nodev,noexec,relatime,perf_event 0 0
+mqueue /dev/mqueue mqueue rw,relatime 0 0
+debugfs /sys/kernel/debug debugfs rw,relatime 0 0
+systemd-1 /proc/sys/fs/binfmt_misc autofs rw,relatime,fd=41,pgrp=1,timeout=0,minproto=5,maxproto=5,direct,pipe_ino=14902 0 0
+hugetlbfs /dev/hugepages hugetlbfs rw,relatime,pagesize=2M 0 0
+fusectl /sys/fs/fuse/connections fusectl rw,relatime 0 0
+configfs /sys/kernel/config configfs rw,relatime 0 0
+/dev/loop1 /snap/gnome-3-28-1804/116 squashfs ro,nodev,relatime 0 0
+/dev/loop0 /snap/core/8689 squashfs ro,nodev,relatime 0 0
+/dev/loop2 /snap/gnome-calculator/704 squashfs ro,nodev,relatime 0 0
+/dev/loop3 /snap/gtk-common-themes/1474 squashfs ro,nodev,relatime 0 0
+/dev/loop4 /snap/gnome-3-26-1604/90 squashfs ro,nodev,relatime 0 0
+/dev/loop5 /snap/gnome-system-monitor/100 squashfs ro,nodev,relatime 0 0
+/dev/loop6 /snap/gnome-logs/61 squashfs ro,nodev,relatime 0 0
+/dev/loop8 /snap/core/7270 squashfs ro,nodev,relatime 0 0
+/dev/loop9 /snap/core18/1668 squashfs ro,nodev,relatime 0 0
+/dev/loop7 /snap/gnome-characters/495 squashfs ro,nodev,relatime 0 0
+/dev/loop10 /snap/gnome-3-26-1604/98 squashfs ro,nodev,relatime 0 0
+/dev/loop11 /snap/gnome-calculator/406 squashfs ro,nodev,relatime 0 0
+/dev/loop12 /snap/gtk-common-themes/1313 squashfs ro,nodev,relatime 0 0
+/dev/loop13 /snap/gnome-logs/93 squashfs ro,nodev,relatime 0 0
+/dev/loop14 /snap/core18/1055 squashfs ro,nodev,relatime 0 0
+/dev/loop15 /snap/gnome-system-monitor/135 squashfs ro,nodev,relatime 0 0
+/dev/loop16 /snap/gnome-characters/296 squashfs ro,nodev,relatime 0 0
+/dev/sda1 /boot/efi vfat rw,relatime,fmask=0077,dmask=0077,codepage=437,iocharset=iso8859-1,shortname=mixed,errors=remount-ro 0 0
+tmpfs /run/user/1000 tmpfs rw,nosuid,nodev,relatime,size=806836k,mode=700,uid=1000,gid=1000 0 0
+gvfsd-fuse /run/user/1000/gvfs fuse.gvfsd-fuse rw,nosuid,nodev,relatime,user_id=1000,group_id=1000 0 0
+
+
+]0;vishwanath@vishwanath-HP-348-G4: ~/1006/s5[01;32mvishwanath@vishwanath-HP-348-G4[00m:[01;34m~/1006/s5[00m$ exit
+exit
+
+Script done on 2020-06-10 14:39:30+0530
